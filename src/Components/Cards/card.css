@@ -1,0 +1,99 @@
+.cardWrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.cardWrapper h1 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* Flexbox Grid */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    justify-content: center;
+    padding: 10px;
+}
+
+.card {
+    height: 350px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+    transform: scale(1.07);
+}
+
+.card img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Line Divider */
+.line-between {
+    height: 2px;
+    background-color: var(--primary-color);
+    width: 100%; /* Keeps it within the card */
+    margin: 10px auto; /* Centered */
+}
+
+/* Card Title */
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    color: #333;
+}
+
+/* 📌 RESPONSIVE STYLES */
+
+/* Tablets (2 cards per row) */
+@media screen and (max-width: 900px) {
+    .card {
+        width: 45%;
+        height: 320px;
+    }
+    .card-title {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
+
+/* Mobile (1 card per row) */
+@media screen and (max-width: 600px) {
+    .card {
+        width: 90%;
+        height: 300px;
+    }
+    .cardWrapper h1 {
+        font-size: 30px;
+    }
+    .card-title {
+        font-size: 14px;
+    }
+}

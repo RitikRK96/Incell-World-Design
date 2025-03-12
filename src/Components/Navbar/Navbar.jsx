@@ -1,26 +1,24 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import "./Navbar.css"; // Import CSS file
+import "./Navbar.css"; 
+import logo from "../../assets/incell-logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const location = useLocation(); // Get the current path
+  const location = useLocation();
 
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        {/* Logo */}
         <Link to="/" className="navbar-logo">
-          CompanyLogo
+          <img src={logo} alt="incell-logo" />
         </Link>
 
-        {/* Hamburger Icon (Mobile) */}
         <button className="navbar-hamburger" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
 
-        {/* Desktop Menu */}
         <ul className="navbar-menu">
           <NavItem to="/" text="Home" location={location} />
           <NavItem to="/services" text="Services" location={location} />
@@ -29,7 +27,6 @@ const Navbar = () => {
         </ul>
       </div>
 
-      {/* Mobile Menu */}
       <div className={`navbar-mobile-menu ${isOpen ? "open" : "closed"}`}>
         <ul>
           <NavItem to="/" text="Home" location={location} onClick={() => setIsOpen(false)} />
@@ -43,7 +40,7 @@ const Navbar = () => {
 };
 
 const NavItem = ({ to, text, location, onClick }) => {
-  const isActive = location.pathname === to; // Check if the current path matches
+  const isActive = location.pathname === to;
 
   return (
     <li>

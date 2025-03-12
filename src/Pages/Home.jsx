@@ -1,9 +1,15 @@
-import React from 'react'
+import HeroCarousel from '../Components/Carousel/HeroCarousel'
+import CardWrapper from '../Components/Cards/CardWrapper'
+import Banner from '../Components/Banner/Banner'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+        <HeroCarousel/>
+        <CardWrapper/>
+        <Banner/>
+    </>
   )
 }
 
-export default Home
+export default Home;
