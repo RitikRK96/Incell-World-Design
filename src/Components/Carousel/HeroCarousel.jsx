@@ -3,7 +3,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "./HeroCarousel.css"; // Custom Hero section styles
-import Banner1 from "../../assets/Banner1.webp";
+import Banner1 from "../../assets/banner1.webp";
 import Banner3 from "../../assets/banner3.jpg";
 import Banner2 from "../../assets/banner2.jpg";
 
