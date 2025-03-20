@@ -12,7 +12,7 @@ import Banner2 from "../../assets/banner2.jpg";
 const slides = [
   {
     image: Banner1,
-    title: "Expert Building Surveying Services",
+    title: "Building Surveying Experts for Reliable Property Assessments",
     description:
       "Ensure the safety and compliance of your property with our expert building surveying services. We provide thorough assessments, risk evaluations, and compliance checks for informed decision-making.",
     buttons: ["Learn More", "Request a Survey", "Contact Us"],
@@ -22,16 +22,17 @@ const slides = [
     title: "Sustainability for a Greener Future",
     description:
       "Adopt eco-friendly solutions to reduce your carbon footprint. Our sustainability services focus on energy efficiency, responsible construction, and renewable energy integration.",
-      buttons: ["Learn More", "Request a Survey", "Contact Us"],
-    },
+    buttons: ["Learn More", "Explore Solutions", "Contact Us"],
+  },
   {
     image: Banner3,
     title: "Visual Property Marketing",
     description:
       "Enhance property appeal with high-quality visuals, virtual tours, and 3D renderings. Our marketing solutions help attract buyers and showcase properties effectively.",
-      buttons: ["Learn More", "Request a Survey", "Contact Us"],
-    },
+    buttons: ["Learn More", "View Portfolio", "Contact Us"],
+  },
 ];
+
 
 
 const HeroCarousel = () => {
@@ -42,7 +43,7 @@ const HeroCarousel = () => {
         autoplay={{ delay: 4000, disableOnInteraction: false }}
         loop={true}
         pagination={{ clickable: true }}
-        speed={1000} // Adjust the transition speed (1000ms = 1s)
+        speed={1000} 
         className="swiper-container"
       >
         {slides.map((slide, index) => (

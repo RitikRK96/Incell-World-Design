@@ -1,25 +1,37 @@
+// Banner.js
 import "./Banner.css";
 import background from "../../assets/banner-background.jpg";
 
 const Banner = () => {
   return (
-    <div className="banner-container" style={{ backgroundImage: `url(${background})` }}>
+    <div
+      className="banner-container"
+      style={{ backgroundImage: `url(${background})` }}
+    >
       <div className="banner-content">
         <h1>Our Story</h1>
         <p>
-          Since 2008 we have been helping clients to understand and navigate their way through 
-          building regulations, establishing ourselves as experts in carrying out energy performance 
-          certificates, sustainability improvements and risk management.
+          Since our inception, <strong>Incell World</strong> has been driven by a
+          passion for delivering cutting-edge telecom solutions that empower
+          seamless connectivity. What started as a small venture with a vision
+          to revolutionise network infrastructure has grown into a trusted
+          global partner, providing innovative solutions in <strong>4G LTE, 5G,
+          VoLTE</strong>, and beyond.
         </p>
         <p>
-          We are regulated by the RICS, and also hold nationally respected accreditations through 
-          Elmhurst and Trust Mark registration, ensuring our clients receive professional and 
-          knowledgeable services on every visit.
+          Our journey began with a focus on enhancing network performance and
+          ensuring robust, scalable, and future-ready telecom solutions. Through
+          years of dedication and continuous learning, we have evolved into a
+          company that not only adapts to industry advancements but also
+          pioneers innovative technologies that redefine the digital landscape.
         </p>
         <p>
-          From a one-person operation at a home office to a team of certified RICS surveyors, 
-          Retrofit Assessors, Retrofit Coordinators, energy assessors, and property photographers, 
-          we provide a cost-effective and seamless service across the UK.
+          Today, <strong>Incell World</strong> is at the forefront of transforming
+          telecom ecosystems by providing intelligent solutions that meet the
+          ever-growing demands of modern communication networks. As we move
+          forward, we remain dedicated to innovation, sustainability, and
+          creating a connected future where technology enhances every aspect of
+          life.
         </p>
       </div>
     </div>
