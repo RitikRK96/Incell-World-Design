@@ -12,4 +12,9 @@
     --footer-bg-color: #121212;
     --footer-text-color: #ccc;
   }
+
+
+  body{
+    overflow-x: hidden;
+  }
   
