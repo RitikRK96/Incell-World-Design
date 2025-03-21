@@ -7,5 +7,9 @@
     --bg-color: #ffffff;
     --hover-bg-color: #e0f2e9; /* Light green for better contrast */
     --hover-text-color: #025008;
-    --border-color: #ddd;
+    --border-color: #333;
+    --link-color: #fff;
+    --footer-bg-color: #121212;
+    --footer-text-color: #ccc;
   }
+  

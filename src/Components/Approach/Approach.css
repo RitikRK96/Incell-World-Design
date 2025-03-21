@@ -1,0 +1,103 @@
+/* Main Container */
+.approach-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 10%;
+    background-color: #f9f9f9;
+}
+
+/* Content Wrapper */
+.approach-content {
+    max-width: 1200px;
+}
+
+/* Heading */
+.approach-content h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+/* Paragraph */
+.approach-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #555;
+    text-align: center;
+}
+
+/* Steps Wrapper */
+.approach-steps {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns by default */
+    gap: 20px;
+}
+
+/* Individual Step */
+.step {
+    background-color: #fff;
+    padding: 20px;
+    border-left: 5px solid var(--primary-color);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.step:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Step Title */
+.step h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+/* Step Description */
+.step p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* 📱 Responsive Styles */
+
+/* Tablets (2 items per row) */
+@media screen and (max-width: 1024px) {
+    .approach-container {
+        padding: 50px 5%;
+    }
+    .approach-steps {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .approach-content h2 {
+        font-size: 32px;
+    }
+}
+
+/* Mobile (1 item per row) */
+@media screen and (max-width: 600px) {
+    .approach-steps {
+        grid-template-columns: 1fr; /* 1 column on smaller screens */
+    }
+    .approach-content h2 {
+        font-size: 28px;
+    }
+    .step {
+        padding: 15px;
+    }
+    .step h3 {
+        font-size: 16px;
+    }
+    .step p {
+        font-size: 13px;
+    }
+}

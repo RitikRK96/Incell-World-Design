@@ -1,0 +1,151 @@
+/* ✅ Footer Container */
+.footer-container {
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    padding: 40px 20px;
+    font-family: "Arial", sans-serif;
+  }
+  
+  /* ✅ Footer Content Wrapper */
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* ✅ Top Section Layout */
+  .footer-top {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  
+  /* ✅ Footer Section Styling */
+  .footer-section {
+    text-align: left;
+  }
+  
+  /* ✅ Logo Section */
+  .logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-logo {
+    max-width: 240px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  /* ✅ Section Heading */
+  .footer-section h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: var(--hover-bg-color);
+  }
+  
+  /* ✅ Section Text */
+  .footer-section p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 10px 0 10px;
+    margin-bottom: 8px;
+
+    color: var(--link-color);
+    text-align: justify;
+  }
+
+  .footer-text-incell{
+    font-size: 14px !important;
+  }
+  
+  /* ✅ Quick Links List */
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* ✅ Links Styling */
+  .footer-link {
+    text-decoration: none;
+    color: var(--link-color);
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    padding: 8px 16px;
+    border-radius: 5px;
+    display: inline-block;
+  }
+
+  /* ✅ Phone Link Styling */
+.footer-email {
+    text-decoration: none;
+    color: var(--link-color);
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  
+  
+  
+  /* ✅ Email Link */
+  .footer-email {
+    text-decoration: none;
+    color: var(--link-color);
+    font-size: 14px;
+    transition: all 0.3s ease-in-out;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  
+  .footer-link:hover,
+  .footer-email:hover {
+    background-color: var(--hover-bg-color);
+    color: var(--hover-text-color);
+  }
+  
+  /* ✅ Footer Bottom Section */
+  .footer-bottom {
+    text-align: center;
+    padding-top: 15px;
+    border-top: 1px solid white;
+    font-size: 14px;
+    color: var(--footer-text-color);
+  }
+  
+  /* ✅ Responsive Design */
+  
+  /* Tablet & Mobile View */
+  @media (max-width: 768px) {
+    .footer-top {
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    .footer-section {
+      text-align: center;
+    }
+    .footer-logo {
+        max-width: 200px;
+    }
+    .footer-section h3 {
+      font-size: 16px;
+    }
+    .footer-text-incell{
+        max-width: 60%;
+    }
+    .footer-section p,
+    .footer-section ul li {
+      font-size: 13px;
+      text-align: center;
+    }
+    .footer-link {
+      font-size: 12px;
+      padding: 4px 8px;
+    }
+    .footer-bottom {
+      font-size: 12px;
+    }
+  }
+  
