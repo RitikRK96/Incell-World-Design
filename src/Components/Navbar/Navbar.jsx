@@ -106,10 +106,36 @@ const ServicesDropdown = ({ location, isMobile, onClick }) => {
         className={`dropdown-menu ${dropdownOpen ? "open" : ""}`}
         style={{ display: dropdownOpen ? "block" : "none" }}
       >
-        <DropdownItem to="/services/service1" text="Service 1" onClick={onClick} />
-        <DropdownItem to="/services/service2" text="Service 2" onClick={onClick} />
-        <DropdownItem to="/services/service3" text="Service 3" onClick={onClick} />
-        <DropdownItem to="/services/service4" text="Service 4" onClick={onClick} />
+        <DropdownItem
+          to="/services/building-surveying"
+          text="Building Surveying"
+          onClick={onClick}
+        />
+        <DropdownItem
+          to="/services/sustainability"
+          text="Sustainability"
+          onClick={onClick}
+        />
+        <DropdownItem
+          to="/services/marketing"
+          text="Marketing"
+          onClick={onClick}
+        />
+        <DropdownItem
+          to="/services/risk-management-planning"
+          text="Risk Management Planning"
+          onClick={onClick}
+        />
+        <DropdownItem
+          to="/services/retrofit"
+          text="Retrofit PAS"
+          onClick={onClick}
+        />
+        <DropdownItem
+          to="/services/packages"
+          text="Packages"
+          onClick={onClick}
+        />{" "}
       </ul>
     </li>
   );

@@ -1,0 +1,83 @@
+/* About Us Section */
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .about-content {
+    max-width: 600px;
+    text-align: justify;
+  }
+  
+  .about-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 16px;
+  }
+  
+  
+  
+  .about-description {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .btn {
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid var(--primary-color);
+  }
+  
+  .btn-primary {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+  }
+  
+  .btn-primary:hover {
+    background-color: var(--hover-bg-color);
+    color: var(--primary-color);
+  }
+  
+  /* About Image */
+  .about-image {
+    max-width: 500px;
+  }
+  
+  .about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 1024px) {
+    .about {
+      flex-direction: column;
+      text-align: center;
+    }
+    .about-title{
+        text-align: center;
+    }
+   
+  
+    .about-content {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .about-image {
+      margin-top: 20px;
+    }
+  }
+  

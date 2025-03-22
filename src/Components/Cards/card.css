@@ -1,119 +1,123 @@
 /* Main Card Wrapper */
 .cardWrapper {
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 20px;
-    width: 100%;
-    background-color: #f9f9f9;
-  }
-  
-  .cardWrapper h1 {
-    font-size: 40px;
-    color: var(--primary-color, #007bff);
-    margin-bottom: 40px;
-    font-weight: 700;
-  }
-  
-  /* Flexbox Grid */
-  .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    max-width: 1200px;
-    justify-content: center;
-    padding: 10px;
-  }
-  
-  /* Card Styles */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  width: 100%;
+  background-color: #f9f9f9;
+}
+
+.cardWrapper h1 {
+  font-size: 40px;
+  color: var(--primary-color, #007bff);
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+/* Flexbox Grid */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  justify-content: center;
+  padding: 10px;
+}
+
+/* Card Styles */
+.card {
+  height: 380px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+/* Hover Effect */
+.card:hover {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+/* Card Image */
+.card img {
+  width: 100%;
+  height: 60%;
+  object-fit: cover;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+/* Line Divider */
+.line-between {
+  height: 2px;
+  background-color: #007cba;
+  width: 80%;
+  margin: 8px auto;
+}
+
+/* Card Title */
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  color: #333;
+}
+
+/* Card Description */
+.card-description {
+  font-size: 14px;
+  text-align: center;
+  color: #555;
+  padding: 0 10px;
+}
+
+/* 📌 RESPONSIVE STYLES */
+
+/* Tablets (2 cards per row) */
+@media screen and (max-width: 900px) {
   .card {
-    height: 380px;
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    border-radius: 12px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    overflow: hidden;
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-    margin-bottom: 10px;
-    cursor: pointer;
+    width: 45%;
+    height: 340px;
   }
-  
-  /* Hover Effect */
-  .card:hover {
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-    transform: translateY(-5px);
-  }
-  
-  /* Card Image */
-  .card img {
-    width: 100%;
-    height: 60%;
-    object-fit: cover;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-  }
-  
-  /* Line Divider */
-  .line-between {
-    height: 2px;
-    background-color: #007cba;
-    width: 80%;
-    margin: 8px auto;
-  }
-  
-  /* Card Title */
   .card-title {
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    padding: 5px;
-    color: #333;
+    font-size: 18px;
   }
-  
-  /* Card Description */
   .card-description {
-    font-size: 14px;
-    text-align: center;
-    color: #555;
-    padding: 0 10px;
+    font-size: 13px;
   }
-  
-  /* 📌 RESPONSIVE STYLES */
-  
-  /* Tablets (2 cards per row) */
-  @media screen and (max-width: 900px) {
-    .card {
-      width: 45%;
-      height: 340px;
-    }
-    .card-title {
-      font-size: 18px;
-    }
-    .card-description {
-      font-size: 13px;
-    }
+}
+
+/* Mobile (1 card per row) */
+@media screen and (max-width: 600px) {
+  .card {
+    width: 90%;
+    height: 320px;
   }
-  
-  /* Mobile (1 card per row) */
-  @media screen and (max-width: 600px) {
-    .card {
-      width: 90%;
-      height: 320px;
-    }
-    .cardWrapper h1 {
-      font-size: 32px;
-    }
-    .card-title {
-      font-size: 16px;
-    }
-    .card-description {
-      font-size: 12px;
-    }
+  .cardWrapper h1 {
+    font-size: 32px;
   }
-  
+  .card-title {
+    font-size: 16px;
+  }
+  .card-description {
+    font-size: 12px;
+  }
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}

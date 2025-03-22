@@ -1,0 +1,146 @@
+/* Main Container */
+.incell-bs-container {
+    font-family: "Arial", sans-serif;
+    background-color: #f9f9f9;
+    overflow-x: hidden;
+  }
+  
+  /* Hero Section */
+  .incell-bs-hero {
+    background-image: url("/assets/incell-building.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    position: relative;
+  }
+  .incell-bs-hero-overlay {
+    background-color: rgba(56, 56, 56, 0.7);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .incell-bs-hero-title {
+    font-size: 2rem;
+    color: #fff;
+    background-color: var(--primary-color);
+    padding: 12px 24px;
+    border-radius: 5px;
+    position: absolute;
+    left: 15%;
+  }
+  
+  /* Content Section */
+  .incell-bs-content-section {
+    padding: 60px 20px;
+    text-align: center;
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .incell-bs-main-heading {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  .incell-bs-main-description,
+  .incell-bs-secondary-description {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  /* Steps Section */
+  .incell-bs-steps-section {
+    margin-top: 40px;
+    padding: 20px 10px;
+  }
+  .incell-bs-steps-title {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+  }
+  .incell-bs-steps-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    text-align: left;
+    margin-top: 20px;
+  }
+  .incell-bs-step {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .incell-bs-step-title {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+  }
+  .incell-bs-step-description {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+  }
+  
+  /* Button Section */
+  .incell-bs-btn-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 40px;
+  }
+  .incell-bs-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .incell-bs-enquire-btn {
+    background-color: var(--primary-color);
+    color: #fff;
+  }
+  .incell-bs-call-btn {
+    background-color: #f4a11e;
+    color: #fff;
+  }
+  .incell-bs-whatsapp-btn {
+    background-color: #25d366;
+    color: #fff;
+  }
+  .incell-bs-btn:hover {
+    opacity: 0.9;
+  }
+  
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    .incell-bs-content-section {
+      width: 100%;
+      padding: 40px 15px;
+    }
+    .incell-bs-btn-container {
+      flex-direction: column;
+      gap: 15px;
+    }
+    .incell-bs-hero-title {
+      font-size: 1.8rem;
+      padding: 10px 20px;
+      position: absolute;
+      left: 18%;
+    }
+    .incell-bs-main-heading {
+      font-size: 1.8rem;
+    }
+    .incell-bs-steps-title {
+      font-size: 1.6rem;
+    }
+  }
+  

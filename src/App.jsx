@@ -10,6 +10,14 @@ import Home from "./Pages/Home";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 
+// Import all service components
+import Sustainability from "./Components/Services Wrapper/Sustainability";
+import Marketing from "./Components/Services Wrapper/Marketing";
+import RiskManagementPlanning from "./Components/Services Wrapper/RiskManagementPlanning";
+import RetrofitPas from "./Components/Services Wrapper/RetrofitPas";
+import Packages from "./Components/Services Wrapper/Packages";
+import BuildingSurveying from "./Components/Services Wrapper/BuildingSurveying";
+
 const App = () => {
   useEffect(() => {
     AOS.init({
@@ -21,15 +29,24 @@ const App = () => {
   return (
     <Router>
       <Navbar />
-      <div className="pt-20"> 
-        <Routes >
+      <div className="pt-17">
+        <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          
+          {/* Service Pages Routes */}
+          <Route path="/services/building-surveying" element={<BuildingSurveying/>} />
+          <Route path="/services/sustainability" element={<Sustainability />} />
+          <Route path="/services/marketing" element={<Marketing />} />
+          <Route path="/services/risk-management-planning" element={<RiskManagementPlanning />} />
+          <Route path="/services/retrofit" element={<RetrofitPas />} />
+          <Route path="/services/packages" element={<Packages />} />
         </Routes>
       </div>
-      <Footer/>
+      <Footer />
+      
     </Router>
   );
 };

@@ -4,19 +4,19 @@
 
 .hero-carousel {
   position: relative;
-  width: 100%;
-  height: calc(100vh - 80px);
+  width: 100vw;
+  height: calc(100vh - 68px);
 }
 
 .carousel-slide {
   position: relative;
   width: 100%;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 68px);
 }
 
 .slide-image {
   width: 100%;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 68px);
   object-fit: cover;
 }
 
