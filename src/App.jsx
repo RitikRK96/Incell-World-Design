@@ -21,7 +21,7 @@ import BuildingSurveying from "./Components/Services Wrapper/BuildingSurveying";
 const App = () => {
   useEffect(() => {
     AOS.init({
-      duration: 500, // Animation duration (1 second)
+      duration: 200, // Animation duration (1 second)
       easing: "ease-in-out",
     });
   }, []);
