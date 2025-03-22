@@ -12,11 +12,12 @@ import Banner2 from "../../assets/banner2.jpg";
 const slides = [
   {
     image: Banner1,
-    title: "Building Surveying Experts for Reliable Property Assessments",
+    title: "Expert Building Surveys for Safe Properties",
     description:
-      "Ensure the safety and compliance of your property with our expert building surveying services. We provide thorough assessments, risk evaluations, and compliance checks for informed decision-making.",
-    buttons: ["Learn More", "Request a Survey", "Contact Us"],
+      "Get reliable assessments and compliance checks to ensure property safety.",
+    buttons: ["Learn More", "Request Survey", "Contact Us"],
   },
+  
   {
     image: Banner2,
     title: "Sustainability for a Greener Future",

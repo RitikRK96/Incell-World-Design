@@ -7,18 +7,20 @@
   
   /* Hero Section */
   .incell-bs-hero {
-    background-image: url("/assets/incell-building.jpg");
+    background-image: url("../../assets/building-survey-banner.webp");
     background-size: cover;
     background-position: center;
     height: 300px;
     position: relative;
+    width: 100vw;
   }
   .incell-bs-hero-overlay {
-    background-color: rgba(56, 56, 56, 0.7);
+    background-color: rgba(56, 56, 56, 0.5);
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100vw;
   }
   .incell-bs-hero-title {
     font-size: 2rem;
@@ -27,7 +29,7 @@
     padding: 12px 24px;
     border-radius: 5px;
     position: absolute;
-    left: 15%;
+    left: 22%;
   }
   
   /* Content Section */
@@ -51,6 +53,7 @@
     color: #555;
     line-height: 1.8;
     margin-bottom: 20px;
+    text-align: justify;
   }
   
   /* Steps Section */
@@ -86,6 +89,7 @@
     font-size: 0.95rem;
     color: #555;
     line-height: 1.5;
+    text-align: justify;
   }
   
   /* Button Section */
@@ -123,8 +127,8 @@
   /* Mobile Styles */
   @media (max-width: 768px) {
     .incell-bs-content-section {
-      width: 100%;
       padding: 40px 15px;
+      width: 90%;
     }
     .incell-bs-btn-container {
       flex-direction: column;
@@ -134,8 +138,12 @@
       font-size: 1.8rem;
       padding: 10px 20px;
       position: absolute;
-      left: 18%;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+      white-space: nowrap; /* Optional: Prevents text wrapping */
     }
+    
     .incell-bs-main-heading {
       font-size: 1.8rem;
     }

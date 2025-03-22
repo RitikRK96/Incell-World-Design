@@ -207,7 +207,7 @@
   .dropdown-item {
     margin-top: 8px;
     border-radius: 6px;
-    margin-left: 49%;
+    margin: 5px auto;
     background-color: var(--hover-bg-color);
     color: var(--primary-color);
     width: 50%;
