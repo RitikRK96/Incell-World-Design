@@ -3,7 +3,7 @@ import "./Services.css"; // Importing CSS for styling
 import EPC from "../../assets/Services/EPC.png";
 import DEC from "../../assets/Services/DEC.webp";
 import ECO4 from "../../assets/Services/eco4.webp";
-import EPC2 from "../../assets/Services/epc2.webp";
+import EPC2 from "../../assets/Services/EPC2.webp";
 import AUDIT from "../../assets/Services/audit.jpg";
 
 
