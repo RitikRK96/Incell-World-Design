@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
@@ -18,16 +18,29 @@ import RetrofitPas from "./Components/Services Wrapper/RetrofitPas";
 import Packages from "./Components/Services Wrapper/Packages";
 import BuildingSurveying from "./Components/Services Wrapper/BuildingSurveying";
 
+// Scroll to top on route change
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    AOS.refresh(); // Refresh AOS after route change
+  }, [pathname]);
+
+  return null;
+};
+
 const App = () => {
   useEffect(() => {
     AOS.init({
-      duration: 200, // Animation duration (1 second)
+      duration: 500, // Animation duration (500ms)
       easing: "ease-in-out",
     });
   }, []);
 
   return (
     <Router>
+      <ScrollToTop />
       <Navbar />
       <div className="pt-17">
         <Routes>
@@ -35,9 +48,9 @@ const App = () => {
           <Route path="/services" element={<Services />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          
+
           {/* Service Pages Routes */}
-          <Route path="/services/building-surveying" element={<BuildingSurveying/>} />
+          <Route path="/services/building-surveying" element={<BuildingSurveying />} />
           <Route path="/services/sustainability" element={<Sustainability />} />
           <Route path="/services/marketing" element={<Marketing />} />
           <Route path="/services/risk-management-planning" element={<RiskManagementPlanning />} />
@@ -46,7 +59,6 @@ const App = () => {
         </Routes>
       </div>
       <Footer />
-      
     </Router>
   );
 };

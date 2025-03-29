@@ -1,0 +1,161 @@
+/* Main Section */
+.contact-section {
+  background-color: var(--bg-color);
+  padding: 3rem 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Title and Description */
+.contact-title {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.contact-description {
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Grid Layout */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Left Section: Contact Info */
+.contact-info {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+
+.info-item {
+  margin-bottom: 1.5rem;
+}
+
+.info-item h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.icon {
+  color: var(--primary-color);
+  margin-right: 0.5rem;
+}
+
+.info-item p {
+  color: var(--text-color);
+}
+
+/* Google Map */
+.map-container {
+  margin-top: 1rem;
+}
+
+.google-map {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+}
+
+/* Right Section: Contact Form */
+.contact-form-container {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures button stays at bottom */
+  height: 100%;
+}
+
+/* Form Grid */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Form Styles */
+.contact-form label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  outline: none;
+}
+
+/* Message Box - Increased Height */
+.contact-form textarea {
+  height: 190px; /* Increased height */
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 5px var(--primary-color);
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--link-color);
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem; /* Adds space before the button */
+  transition: all 0.3s ease;
+}
+
+/* Submit Button Hover */
+.submit-btn:hover {
+  background-color: var(--hover-bg-color);
+  color: var(--hover-text-color);
+}
