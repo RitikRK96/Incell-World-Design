@@ -1,6 +1,7 @@
-// src/components/Contactus.js
 import React, { useState } from "react";
-import "./Contactus.css"; // Importing the external CSS
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import "./Contactus.css";
 
 const Contactus = () => {
   const [formData, setFormData] = useState({
@@ -9,51 +10,53 @@ const Contactus = () => {
     subject: "",
     message: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  // Google Apps Script Web App URL
-  const scriptURL =
-    "https://script.google.com/macros/s/AKfycbyKjilANo9j2Hgemdt0PXzDuR0m0I8NFxH3n1qDuLpzFjGT69rsgyao0pW8OLkW2iAB/exec";
+  const scriptURL = "https://script.google.com/macros/s/AKfycbx9GQlmjcXhZjNSTGfSB54rpBFo4jR34gt3JwKHE_ewjNsbAtZl3-179Cz8QQFNum2DGA/exec";
 
-  // Handle input change
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
-    // Prepare form data for submission
-    const formDataToSend = new FormData();
+    // Create URLSearchParams instead of JSON
+    const formDataToSend = new URLSearchParams();
     formDataToSend.append("name", formData.name);
     formDataToSend.append("email", formData.email);
     formDataToSend.append("subject", formData.subject);
     formDataToSend.append("message", formData.message);
 
-    // Send form data to Google Sheets
     fetch(scriptURL, {
       method: "POST",
       body: formDataToSend,
+      mode: "no-cors",
     })
-      .then((response) => {
-        if (response.ok) {
-          alert("Message sent successfully! ✅");
-          console.log("Form Submitted:", formData);
+      .then(() => {
+        // Show toast notification
+        toast.success("✅ Form Submitted successfully! 👩‍💻 Our team will reach to you shortly 😊", {
+          position: "bottom-left",
+          autoClose: 3000,
+        });
 
-          // Reset form after submission
-          setFormData({
-            name: "",
-            email: "",
-            subject: "",
-            message: "",
-          });
-        } else {
-          alert("Failed to send message. ❌ Please try again.");
-        }
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+        });
       })
       .catch((error) => {
         console.error("Error!", error.message);
-        alert("Error while sending message. ❌");
+        toast.error("❌ Error while sending message...", {
+          position: "bottom-left",
+          autoClose: 3000,
+        });
+      })
+      .finally(() => {
+        setIsSubmitting(false);
       });
   };
 
@@ -62,22 +65,16 @@ const Contactus = () => {
       <div className="container">
         <h2 className="contact-title">Contact Us</h2>
         <p className="contact-description">
-          If you have any queries or require assistance, please don't hesitate
-          to get in touch with us. Our dedicated team is here to help you with
-          any questions.
+          Have questions? Our team is here to help. Contact us today!
         </p>
 
         <div className="contact-grid">
-          {/* Left Section: Contact Info */}
           <div className="contact-info">
             <div className="info-item">
               <h3>
                 <span className="icon">📍</span> Location:
               </h3>
-              <p>
-                Unit 3 Grand Union Enterprise Bridge Road Southall Middlesex UB2
-                4EX
-              </p>
+              <p>Unit 3 Grand Union Enterprise Bridge Road Southall, UB2 4EX</p>
             </div>
 
             <div className="info-item">
@@ -93,19 +90,21 @@ const Contactus = () => {
               </h3>
               <p>0208 843 5173</p>
             </div>
-
-            {/* Google Map */}
             <div className="map-container">
               <iframe
                 title="Google Map"
                 className="google-map"
-                src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ7cmU-JpLdkgRXrt14_O3ygE&key=YOUR_GOOGLE_MAPS_API_KEY"
-                allowFullScreen
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.5465553501695!2d-0.3763146118631323!3d51.503188099132686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760d4dfaae013d%3A0xabcdd90e7bc11bfb!2sIncell%20World%20Uk%20Ltd!5e0!3m2!1sen!2sin!4v1743242707380!5m2!1sen!2sin"
+                width="600"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
               />
             </div>
           </div>
 
-          {/* Right Section: Contact Form */}
           <div className="contact-form-container">
             <form onSubmit={handleSubmit} className="contact-form">
               <div className="form-grid">
@@ -162,13 +161,16 @@ const Contactus = () => {
                 />
               </div>
 
-              <button type="submit" className="submit-btn">
-                Send Message
+              <button type="submit" className="submit-btn" disabled={isSubmitting}>
+                {isSubmitting ? "Sending..." : "Send Message"}
               </button>
             </form>
           </div>
         </div>
       </div>
+
+      {/* Toast Container */}
+      <ToastContainer />
     </section>
   );
 };

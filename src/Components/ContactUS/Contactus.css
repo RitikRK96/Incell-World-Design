@@ -12,12 +12,34 @@
 
 /* Title and Description */
 .contact-title {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: bold;
   text-align: center;
   color: var(--primary-color);
   margin-bottom: 1rem;
+  position: relative;
 }
+
+.contact-title::before, 
+.contact-title::after {
+  content: ""; 
+  display: inline-block;
+  height: 3px;
+  width: 60px;
+  background-color: var(--primary-color);
+  vertical-align: middle;
+}
+
+/* Add spacing between text and pseudo-elements */
+.contact-title::before {
+  margin-right: 10px; /* Space to the left */
+}
+
+.contact-title::after {
+  margin-left: 10px; /* Space to the right */
+}
+
+
 
 .contact-description {
   text-align: center;
