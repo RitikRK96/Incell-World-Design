@@ -114,14 +114,17 @@
 .incell-bs-enquire-btn {
   background-color: var(--primary-color);
   color: #fff;
+  text-align: center;
 }
 .incell-bs-call-btn {
   background-color: #f4a11e;
   color: #fff;
+  text-align: center;
 }
 .incell-bs-whatsapp-btn {
   background-color: #25d366;
   color: #fff;
+  text-align: center;
 }
 .incell-bs-btn:hover {
   opacity: 0.9;
@@ -273,5 +276,112 @@
 
   .banner-image img {
     max-width: 300px;
+  }
+}
+
+/* Package */
+/* Package Intro Section */
+.package-intro {
+  text-align: center;
+  background: #f8f9fa; /* Light grey background */
+  padding: 40px 20px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px var(--bg-color);
+
+}
+
+.package-description {
+  font-size: 1.2rem;
+  color: #333;
+  max-width: 1200px;
+  margin: 0 auto 20px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+
+/* Why Choose Section */
+.why-choose-section {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  font-weight: 700;
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: var(--primary-color);
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+.package-description {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+  max-width: 1100px;
+  margin: 0 auto 40px;
+}
+
+/* List Styles */
+.why-choose-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1100px;
+  text-align: left;
+}
+
+.why-choose-list li {
+  background-color: #ffffff;
+  border-left: 5px solid var(--primary-color);
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+.why-choose-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.why-choose-list li strong {
+  font-size: 1.2rem;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .package-description {
+    font-size: 1rem;
+    padding: 0 15px;
+  }
+
+  .why-choose-list li {
+    padding: 12px 15px;
+  }
+
+  .why-choose-list li strong {
+    font-size: 1.1rem;
   }
 }

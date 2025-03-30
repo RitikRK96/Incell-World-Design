@@ -3,3 +3,87 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* Contact Intro Section */
+.contact-intro-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #d6d6d6;
+  margin-top: 70px;
+}
+
+.contact-intro-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.contact-intro-description {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--primary-color);
+  max-width: 850px;
+  margin: 0 auto 20px;
+}
+
+.contact-intro-highlight {
+  font-size: 16px;
+  font-weight: 600;
+  color: #e63946;
+  margin-top: 10px;
+}
+
+/* Contact Details Section */
+.contact-details-section {
+  text-align: left;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact-details-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact-details-description {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #4d4d4d;
+}
+
+.contact-benefits-list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.contact-benefits-list li {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  padding-left: 25px;
+  position: relative;
+}
+
+/* Bullet Icon */
+.contact-benefits-list li::before {
+  content: "✔";
+  color: #1f2d5e;
+  position: absolute;
+  left: 0;
+  font-size: 18px;
+}
+
+.contact-closing {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-color);
+  text-align: center;
+  margin-top: 20px;
+}

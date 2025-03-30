@@ -5,12 +5,14 @@ import About from '../Components/AboutUs/About.jsx'
 import Approach from '../Components/Approach/Approach'
 import TestimonialSlider from '../Components/Testimonials/TestimonialSlider'
 import PartnerCarousel from '../Components/PartnerCarousel/PartnerCarousel'
+import WhyChoose from '../Components/Services Wrapper/WhyChoose.jsx'
 
 const Home = () => {
   return (
     <>
         <HeroCarousel/>
         <About/>
+        <WhyChoose/>
         <CardWrapper/>
         <Banner/>
         <Approach/>

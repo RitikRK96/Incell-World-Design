@@ -95,7 +95,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/about-us" className="footer-link" data-aos="fade-up" >
+                <Link to="/about" className="footer-link" data-aos="fade-up" >
                   About Us
                 </Link>
               </li>

@@ -1,109 +1,105 @@
 import React from "react";
 import "./Services.css";
+import ButtonThree from "./ButtonThree";
+import EPC from "../../assets/Services/EPC.png";
+import DEC from "../../assets/Services/DEC.webp";
+import ECO4 from "../../assets/Services/eco4.webp";
+import EPC2 from "../../assets/Services/EPC2.webp";
+import AUDIT from "../../assets/Services/audit.jpg";
+
+// Data for Building Surveying
+const buildingSurveyingData = [
+  {
+    title: "1. Initial Consultation",
+    description:
+      "We start by understanding your unique requirements, property concerns, and project goals. Our experts guide you in choosing the most suitable survey, tailored to your property type and future plans.",
+    img: EPC,
+  },
+  {
+    title: "2. Property Inspection",
+    description:
+      "Our RICS-certified surveyors conduct a meticulous on-site inspection, identifying any structural issues, defects, and potential risks that may affect the property’s value and safety.",
+    img: DEC,
+  },
+  {
+    title: "3. Data Collection & Analysis",
+    description:
+      "We collect detailed property data, including measurements, materials used, and overall condition. This data is then thoroughly analysed to assess potential risks and ensure informed decision-making.",
+    img: ECO4,
+  },
+  {
+    title: "4. Report Preparation",
+    description:
+      "After the inspection and analysis, we prepare a comprehensive report detailing our findings. The report includes expert recommendations, highlighting critical areas that require immediate attention.",
+    img: EPC2,
+  },
+  {
+    title: "5. Review & Consultation",
+    description:
+      "Once the report is ready, we conduct a personalised review session to walk you through the findings. Our experts answer your questions and provide valuable insights to help you make an informed decision.",
+    img: AUDIT,
+  },
+];
 
 const BuildingSurveying = () => {
   return (
-    <div className="incell-bs-container">
+    <>
       {/* Hero Section */}
-      <section className="incell-bs-hero">
+      <section className="incell-ss-hero mt-18">
         <div className="incell-bs-hero-overlay">
-          <h1 className="incell-bs-hero-title">Building Surveying</h1>
+          <h1 className="incell-ss-hero-title">Building Surveying</h1>
         </div>
       </section>
 
-      {/* Content Section */}
-      <section className="incell-bs-content-section">
-        <h2 className="incell-bs-main-heading">
-          Expert Building Surveying Solutions by Incell World
-        </h2>
-        <p className="incell-bs-main-description">
-          Incell World provides expert building surveying services across the
-          UK. Our RICS-certified surveyors offer in-depth property surveys,
-          including RICS UK Home Buyers’ Reports for a range of clients such as
-          estate agents, landlords, and property managers. We ensure unmatched
-          turnaround times and competitive pricing.
+      {/* Introduction Section */}
+      <section className="package-intro">
+        <p className="package-description">
+          At <strong>Incell World</strong>, we provide expert building surveying
+          solutions designed to give you a clear understanding of your
+          property’s condition. Our RICS-certified surveyors offer a range of
+          services that ensure property compliance, safety, and value
+          assessment.
         </p>
-        <p className="incell-bs-secondary-description">
-          Our comprehensive RICS Home Buyers Survey includes a thorough
-          examination of the property’s condition, providing peace of mind and
-          detailed insights into your investment. Each survey covers key areas
-          of concern, culminating in a complete RICS-certified report.
+        <p className="package-description">
+          Our surveys cover everything from structural assessments to
+          environmental compliance, enabling property owners, landlords, and
+          investors to make well-informed decisions. With our efficient
+          processes and advanced technology, we guarantee timely and
+          comprehensive reports.
         </p>
+        <p className="package-description">
+          Whether you're purchasing, selling, or maintaining a property, we
+          ensure transparency by providing complete insights into the property’s
+          condition. Trust us for seamless, reliable, and expert guidance
+          throughout the surveying process.
+        </p>
+        <section className="btn-section">
+          <ButtonThree />
+        </section>
+      </section>
 
-        {/* Steps Section */}
-        <section className="incell-bs-steps-section">
-          <h2 className="incell-bs-steps-title">
-            Our 5-Step Surveying Process
-          </h2>
-          <div className="incell-bs-steps-container">
-            <div className="incell-bs-step" data-aos="fade-up">
-              <h3 className="incell-bs-step-title">1. Initial Consultation</h3>
-              <p className="incell-bs-step-description">
-                We assess your requirements, discuss your property concerns, and
-                recommend the right survey based on your property type.
-              </p>
+      {/* Steps/Surveying Process Section */}
+      <section className="sustainability-container">
+        {buildingSurveyingData.map((item, index) => (
+          <div
+            className={`banner ${
+              index % 2 === 0 ? "content-left" : "content-right"
+            }`}
+            key={index}
+          >
+            <div className="banner-content">
+              <h3 className="banner-title">{item.title}</h3>
+              <p className="banner-description">{item.description}</p>
             </div>
-            <div className="incell-bs-step" data-aos="fade-up">
-              <h3 className="incell-bs-step-title">2. Property Inspection</h3>
-              <p className="incell-bs-step-description">
-                Our RICS-certified surveyors conduct a thorough physical
-                inspection to identify structural issues, defects, and potential
-                risks.
-              </p>
-            </div>
-            <div className="incell-bs-step" data-aos="fade-up">
-              <h3 className="incell-bs-step-title">
-                3. Data Collection & Analysis
-              </h3>
-              <p className="incell-bs-step-description">
-                We gather detailed data, including property measurements,
-                materials, and condition, followed by rigorous analysis to
-                assess risk factors.
-              </p>
-            </div>
-            <div className="incell-bs-step" data-aos="fade-up">
-              <h3 className="incell-bs-step-title">4. Report Preparation</h3>
-              <p className="incell-bs-step-description">
-                A comprehensive report is prepared, highlighting findings,
-                recommendations, and areas that require immediate attention.
-              </p>
-            </div>
-            <div className="incell-bs-step" data-aos="fade-up">
-              <h3 className="incell-bs-step-title">5. Review & Consultation</h3>
-              <p className="incell-bs-step-description">
-                We review the report with you, provide expert insights, and
-                answer any questions to ensure you make an informed decision.
-              </p>
+            <div className="banner-image">
+              <img src={item.img} alt={item.title} />
             </div>
           </div>
-        </section>
-
-        {/* Buttons Section */}
-        <div className="incell-bs-btn-container">
-          <a
-            href="/contact"
-            className="incell-bs-btn incell-bs-enquire-btn"
-            data-aos="fade-right"
-          >
-            ENQUIRE NOW
-          </a>
-          <a
-            href="tel:+441234567890"
-            className="incell-bs-btn incell-bs-call-btn"
-            data-aos="fade-up"
-          >
-            CALL US
-          </a>
-          <a
-            href="https://wa.me/441234567890"
-            className="incell-bs-btn incell-bs-whatsapp-btn"
-            data-aos="fade-left"
-          >
-            WHATSAPP
-          </a>
-        </div>
+        ))}
       </section>
-    </div>
+
+      {/* Button Section */}
+    </>
   );
 };
 

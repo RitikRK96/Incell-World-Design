@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from "react-route
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
+import "./App.css";
 
 import Services from "./Pages/Services";
 import About from "./Pages/About";
@@ -17,6 +18,7 @@ import RiskManagementPlanning from "./Components/Services Wrapper/RiskManagement
 import RetrofitPas from "./Components/Services Wrapper/RetrofitPas";
 import Packages from "./Components/Services Wrapper/Packages";
 import BuildingSurveying from "./Components/Services Wrapper/BuildingSurveying";
+import Contactus from "./Components/ContactUS/Contactus";
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -58,6 +60,7 @@ const App = () => {
           <Route path="/services/packages" element={<Packages />} />
         </Routes>
       </div>
+      <Contactus/>
       <Footer />
     </Router>
   );
