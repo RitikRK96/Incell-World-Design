@@ -62,7 +62,7 @@
 /* Line Divider */
 .line-between {
   height: 2px;
-  background-color: #007cba;
+  background-color: var(--primary-color);
   width: 80%;
   margin: 8px auto;
 }
@@ -73,7 +73,7 @@
   font-weight: bold;
   text-align: center;
   padding: 5px;
-  color: #333;
+  color: var(--primary-color);
 }
 
 /* Card Description */
@@ -86,7 +86,6 @@
 
 /* 📌 RESPONSIVE STYLES */
 
-/* Tablets (2 cards per row) */
 @media screen and (max-width: 900px) {
   .card {
     width: 45%;
@@ -100,7 +99,6 @@
   }
 }
 
-/* Mobile (1 card per row) */
 @media screen and (max-width: 600px) {
   .card {
     width: 90%;

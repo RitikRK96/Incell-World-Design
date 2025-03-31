@@ -2,12 +2,14 @@
 
 /* Root Variables */
 :root {
+    --primary-color: red;
     /* --primary-color: #025008; */
-    --primary-color: #1c3b6e;
+    /* --primary-color: #1c3b6e; */
     --text-color: #333;
     --bg-color: #ffffff;
-    --hover-bg-color: #e0f2e9; /* Light green for better contrast */
-    --hover-text-color: #025008;
+    /* --hover-bg-color: #e0f2e9;  */
+    --hover-bg-color: #ffdcdc; 
+    --hover-text-color: #ea3322;
     --border-color: #333;
     --link-color: #fff;
     --footer-bg-color: #121212;
