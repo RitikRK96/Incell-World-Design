@@ -1,9 +1,9 @@
 /* ✅ Partner Section Styles */
 .partner-carousel-section {
   text-align: center;
-  padding: 50px 0px;
+  padding: 30px 0; /* Reduced padding for mobile */
   background-color: #fff;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 /* ✅ Heading Style */
@@ -12,6 +12,27 @@
   color: var(--primary-color, #007bff);
   margin-bottom: 40px;
   font-weight: 700;
+  position: relative;
+  display: inline-block;
+}
+
+.partner-carousel-heading::before,
+.partner-carousel-heading::after {
+  content: "";
+  height: 3px;
+  width: 60px;
+  background-color: var(--primary-color, #007bff);
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+}
+
+.partner-carousel-heading::before {
+  left: -70px;
+}
+
+.partner-carousel-heading::after {
+  right: -70px;
 }
 
 /* ✅ Slick Slider Container */
@@ -19,7 +40,7 @@
   position: relative;
   width: 90%;
   margin: 0 auto;
-  padding: 0 20px; /* Add space on both sides */
+  padding: 0 20px;
 }
 
 /* ✅ Individual Slide */
@@ -27,6 +48,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
 /* ✅ Partner Logo - Maintain Original Aspect Ratio */
@@ -41,7 +63,7 @@
 
 /* Hover Effect */
 .partner-carousel-logo:hover {
-  transform: scale(1.1); /* Slight zoom on hover */
+  transform: scale(1.1);
 }
 
 /* ✅ Custom Arrow Styles */
@@ -59,11 +81,11 @@
 
 /* Adjust arrow positions */
 .partner-carousel-custom-prev {
-  left: -40px; /* Adjust left spacing */
+  left: -40px;
 }
 
 .partner-carousel-custom-next {
-  right: -20px; /* Adjust right spacing */
+  right: -20px;
 }
 
 .partner-carousel-custom-prev:hover,
@@ -76,15 +98,38 @@
   .partner-carousel-heading {
     font-size: 36px;
   }
+
+  .partner-carousel-heading::before,
+  .partner-carousel-heading::after {
+    height: 3px;
+    width: 50px;
+    background-color: var(--primary-color, #007bff);
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+  }
+
+  .partner-carousel-heading::before {
+    left: -60px;
+  }
+
+  .partner-carousel-heading::after {
+    right: -60px;
+  }
+
   .partner-carousel-logo {
     max-height: 70px;
   }
 }
 
 @media (max-width: 768px) {
-  .partner-carousel-heading {
-    font-size: 28px;
+  .partner-carousel-section {
+    padding: 20px 0; /* Further reduce padding */
   }
+  .partner-carousel-heading {
+    margin-bottom: 30px;
+  }
+
   .partner-carousel-logo {
     max-height: 60px;
   }
@@ -97,21 +142,48 @@
 }
 
 @media (max-width: 480px) {
+  .partner-carousel-section {
+    padding: 15px 0;
+  }
   .partner-carousel-heading {
-    font-size: 24px;
+    margin-bottom: 20px;
   }
   .partner-carousel-logo {
     max-height: 50px;
+    width: 80%;
+    margin: 0 auto;
   }
   .partner-carousel-custom-prev,
   .partner-carousel-custom-next {
-    font-size: 18px;
-    top: 45%;
+    font-size: 16px;
+    top: 50%;
   }
   .partner-carousel-custom-prev {
-    left: -10px;
+    left: 5px;
   }
   .partner-carousel-custom-next {
-    right: -5px;
+    right: 30px;
   }
+  .slick-slider {
+    width: 100%;
+    padding: 0 10px;
+  }
+  .partner-carousel-heading::before,
+  .partner-carousel-heading::after {
+    height: 3px;
+    width: 40px;
+    background-color: var(--primary-color, #007bff);
+    position: absolute;
+    top: 55%;
+    transform: translateY(-50%);
+  }
+
+  .partner-carousel-heading::before {
+    left: -45px;
+  }
+
+  .partner-carousel-heading::after {
+    right: -45px;
+  }
+
 }
