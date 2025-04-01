@@ -1,10 +1,9 @@
 import React from "react";
 import "./Services.css"; // Importing CSS for styling
-import EPC from "../../assets/Services/EPC.png";
-import DEC from "../../assets/Services/DEC.webp";
-import ECO4 from "../../assets/Services/eco4.webp";
-import EPC2 from "../../assets/Services/EPC2.webp";
-import AUDIT from "../../assets/Services/audit.jpg";
+import EPC from "../../assets/banner1.webp";
+import DEC from "../../assets/drone.jpg";
+import ECO4 from "../../assets/VG.jpeg";
+import EPC2 from "../../assets/360.jpg";
 import ButtonThree from "./ButtonThree";
 
 const marketingData = [
@@ -32,12 +31,6 @@ const marketingData = [
       "Our 360° virtual tours provide an immersive experience that allows prospective buyers to explore your property remotely. High resolution and fully hosted, these tours offer buyers a realistic walkthrough experience before a live viewing.",
     img: EPC2,
   },
-  {
-    title: "Photo Editing & Enhancement",
-    description:
-      "Our in-house editing team ensures high-quality and realistic photo retouching. We enhance images with colour correction, blue sky replacement, and branded logo additions, ensuring your property stands out in listings.",
-    img: AUDIT,
-  },
 ];
 
 const Marketing = () => {
@@ -58,6 +51,7 @@ const Marketing = () => {
               index % 2 === 0 ? "content-left" : "content-right"
             }`}
             key={index}
+            data-aos="fade-up"
           >
             <div className="banner-content">
               <h3 className="banner-title">{item.title}</h3>

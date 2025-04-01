@@ -1,11 +1,12 @@
 import React from "react";
 import "./Services.css";
 import ButtonThree from "./ButtonThree";
-import EPC from "../../assets/Services/EPC.png";
-import DEC from "../../assets/Services/DEC.webp";
-import ECO4 from "../../assets/Services/eco4.webp";
-import EPC2 from "../../assets/Services/EPC2.webp";
-import AUDIT from "../../assets/Services/audit.jpg";
+import EPC from "../../assets/risk1.png";
+import DEC from "../../assets/fire-risk.png";
+import ECO4 from "../../assets/cad-modelling.jpg";
+import EPC2 from "../../assets/risk3.jpeg";
+import AUDIT from "../../assets/Quality-Assurance-1.jpeg";
+import WhyChoose from "./WhyChoose";
 
 // Data for Risk, Management, and Planning Services
 const riskManagementData = [
@@ -98,6 +99,7 @@ const RiskManagementPlanning = () => {
               index % 2 === 0 ? "content-left" : "content-right"
             }`}
             key={index}
+            data-aos="fade-up"
           >
             <div className="banner-content">
               <h3 className="banner-title">{item.title}</h3>
@@ -111,37 +113,7 @@ const RiskManagementPlanning = () => {
         ))}
       </section>
 
-      {/* Why Choose Us Section */}
-      <section className="why-choose-section">
-        <h2 className="section-title">Why Choose Incell World?</h2>
-        <p className="package-description">
-          At <strong>Incell World</strong>, we combine expertise with a
-          commitment to delivering high-quality services that ensure safety and
-          compliance. Our team works closely with clients to understand their
-          unique requirements and deliver tailored solutions. Here’s why our
-          clients trust us:
-        </p>
-        <ul className="why-choose-list">
-          <li>
-            <strong>Qualified Professionals:</strong> Our assessors, designers,
-            and coordinators are fully accredited and experienced.
-          </li>
-          <li>
-            <strong>Compliance Guaranteed:</strong> All services meet the
-            highest UK regulatory standards, ensuring full compliance.
-          </li>
-          <li>
-            <strong>Customised Solutions:</strong> We tailor our services to
-            meet the specific needs of our clients, offering flexible and
-            effective solutions.
-          </li>
-          <li>
-            <strong>Advanced Technology:</strong> We use state-of-the-art tools
-            and techniques to ensure accurate assessments and efficient project
-            management.
-          </li>
-        </ul>
-      </section>
+        <WhyChoose/>
 
       {/* Button Section */}
       <section className="btn-section">

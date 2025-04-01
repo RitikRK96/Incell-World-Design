@@ -1,156 +1,147 @@
 /* ✅ Testimonial Container */
 .testimonial-container {
-    width: 100%;
-    padding: 0 10% 80px 10%;
-    background-color: #f9f9f9;
-    text-align: center;
-    position: relative;
-  }
-  
-  /* ✅ Heading */
-  .testimonial-container h2 {
-    font-size: 40px;
-    color: var(--primary-color, #007bff);
-    margin-bottom: 40px;
-    font-weight: 700;
-  }
-  
-  /* ✅ Custom Swiper Wrapper */
-  .custom-swiper {
-    position: relative;
-    padding: 0 50px;
-  }
-  
-  /* ✅ Testimonial Card */
-  .testimonial-card {
-    background-color: #fff;
-    width: 100%;
-    max-width: 400px;
-    height: 320px;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-  }
-  
-  .testimonial-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* ✅ Testimonial Image */
-  .testimonial-card img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 15px;
-  }
-  
-  /* ✅ Name */
-  .testimonial-card h3 {
-    font-size: 18px;
-    font-weight: 600;
-    color: var(--primary-color, #007bff);
-    margin-bottom: 5px;
-  }
-  
-  /* ✅ Role */
-  .role {
-    font-size: 14px;
-    color: #888;
-    margin-bottom: 10px;
-  }
-  
-  /* ✅ Feedback */
-  .feedback {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #555;
-  }
-  
-  /* ✅ Custom Navigation Buttons */
-  .custom-prev-btn,
-  .custom-next-btn {
-    position: absolute;
-    top: 58%;
-    transform: translateY(-50%);
-    background-color: var(--primary-color, #007bff);
-    color: #fff;
-    border: none;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    z-index: 10;
-    transition: background-color 0.3s ease;
-  }
-  
-  /* ✅ Left Button */
-  .custom-prev-btn {
-    left: 30px;
-  }
-  
-  /* ✅ Right Button */
-  .custom-next-btn {
-    right: 30px;
-  }
-  
-  /* ✅ Button Hover Effect */
-  .custom-prev-btn:hover,
-  .custom-next-btn:hover {
-    background-color: #333;
-  }
-  
-  /* ✅ Hide Swiper Pagination */
-  .swiper-pagination {
-    display: none !important;
-  }
-  
-  /* 📱 Responsive Styles */
-  @media screen and (max-width: 550px) {
-    .testimonial-container {
+  width: 100%;
+  padding: 0 10% 80px 10%;
+  background-color: #f9f9f9;
+  text-align: center;
+  position: relative;
+}
+
+/* ✅ Heading */
+.testimonial-container h2 {
+  font-size: 40px;
+  color: var(--primary-color, #007bff);
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+/* ✅ Custom Swiper Wrapper */
+.custom-swiper {
+  position: relative;
+  padding: 0 50px;
+}
+
+/* ✅ Testimonial Card */
+.testimonial-card {
+  background-color: #fff;
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* ✅ Name */
+.testimonial-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-color, #007bff);
+  margin-bottom: 5px;
+}
+
+/* ✅ Role */
+.role {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+/* ✅ Feedback */
+.feedback {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* ✅ Custom Navigation Buttons */
+.custom-prev-btn,
+.custom-next-btn {
+  position: absolute;
+  top: 48%;
+  transform: translateY(-50%);
+  background-color: var(--primary-color, #007bff);
+  color: #fff;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s ease;
+}
+
+/* ✅ Left Button */
+.custom-prev-btn {
+  left: 30px;
+}
+
+/* ✅ Right Button */
+.custom-next-btn {
+  right: 30px;
+}
+
+/* ✅ Button Hover Effect */
+.custom-prev-btn:hover,
+.custom-next-btn:hover {
+  background-color: var(--hover-bg-color);
+  color: var(--primary-color);
+}
+
+/* ✅ Hide Swiper Pagination */
+.swiper-pagination {
+  display: none !important;
+}
+
+/* 📱 Responsive Styles */
+@media screen and (max-width: 550px) {
+  .testimonial-container {
       padding: 50px 5%;
-    }
-  
-    .testimonial-container h2 {
+  }
+
+  .testimonial-container h2 {
       font-size: 32px;
-    }
-  
-    .testimonial-card {
+  }
+
+  .testimonial-card {
       padding: 20px;
       height: auto;
-    }
-  
-    .testimonial-card h3 {
+  }
+
+  .testimonial-card h3 {
       font-size: 16px;
-    }
-  
-    .feedback {
+  }
+
+  .feedback {
       font-size: 14px;
-    }
-  
-    .custom-prev-btn,
-    .custom-next-btn {
+  }
+
+  .custom-prev-btn,
+  .custom-next-btn {
       width: 35px;
       height: 35px;
       font-size: 16px;
-    }
-  
-    .custom-prev-btn {
-      left: 5px;
-    }
-  
-    .custom-next-btn {
-      right: 5px;
-    }
   }
-  
+
+  .custom-prev-btn {
+      left: 5px;
+  }
+
+  .custom-next-btn {
+      right: 5px;
+  }
+}

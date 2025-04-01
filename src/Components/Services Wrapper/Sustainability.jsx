@@ -1,10 +1,10 @@
 import React from "react";
 import "./Services.css"; // Importing CSS for styling
 import EPC from "../../assets/Services/EPC.png";
-import DEC from "../../assets/Services/DEC.webp";
+import DEC from "../../assets/Display-energy-Certificate.jpg";
 import ECO4 from "../../assets/Services/eco4.webp";
 import EPC2 from "../../assets/Services/EPC2.webp";
-import AUDIT from "../../assets/Services/audit.jpg";
+import AUDIT from "../../assets/Energy-Audit-Scheme.jpg";
 
 
 
@@ -57,6 +57,7 @@ const Sustainability = () => {
               index % 2 === 0 ? "content-left" : "content-right"
             }`}
             key={index}
+            data-aos="fade-up"
           >
             <div className="banner-content">
               <h3 className="banner-title">{item.title}</h3>

@@ -12,7 +12,7 @@
 
 /* Title and Description */
 .contact-title {
-  font-size: 2.2rem;
+  font-size: 40px;
   font-weight: bold;
   text-align: center;
   color: var(--primary-color);
@@ -20,9 +20,9 @@
   position: relative;
 }
 
-.contact-title::before, 
+.contact-title::before,
 .contact-title::after {
-  content: ""; 
+  content: "";
   display: inline-block;
   height: 3px;
   width: 60px;
@@ -38,8 +38,6 @@
 .contact-title::after {
   margin-left: 10px; /* Space to the right */
 }
-
-
 
 .contact-description {
   text-align: center;
@@ -127,6 +125,16 @@
 @media (min-width: 768px) {
   .form-grid {
     grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .contact-title {
+    font-size: 32px;
+  }
+  .contact-title::before,
+  .contact-title::after {
+    height: 3px;
+    width: 40px;
   }
 }
 

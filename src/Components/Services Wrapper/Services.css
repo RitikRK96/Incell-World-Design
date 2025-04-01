@@ -171,6 +171,7 @@
   background-image: url("../../assets/building-survey-banner.webp");
   background-size: cover;
   background-position: center;
+  margin-top: 70px;
   height: 300px;
   position: relative;
   width: 100vw;
@@ -181,7 +182,6 @@
   color: #fff;
   background-color: var(--primary-color);
   padding: 12px 24px;
-  left: 32.5%;
   transform: translateX(-50%);
   text-align: center;
   white-space: nowrap;
@@ -197,7 +197,7 @@
   margin-bottom: 40px;
   padding: 20px;
   border-radius: 10px;
-  background-color: #f0fdf4;
+  background-color: var(--hover-bg-color);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 

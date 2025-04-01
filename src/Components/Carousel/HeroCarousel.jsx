@@ -1,42 +1,59 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
+import { useNavigate } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/pagination";
-import "./HeroCarousel.css"; // Custom Hero section styles
-import Banner1 from "../../assets/banner1.webp";
-import Banner3 from "../../assets/banner3.jpg";
-import Banner2 from "../../assets/banner2.jpg";
+import "./HeroCarousel.css"; 
 
+import Banner1 from "../../assets/b1.jpg";
+import Banner3 from "../../assets/b2.png";
+import Banner2 from "../../assets/banner1Grok.jpg";
 
-
+// Slide Data
 const slides = [
   {
-    image: Banner1,
-    title: "Expert Building Surveys for Safe Properties",
-    description:
-      "Get reliable assessments and compliance checks to ensure property safety.",
-    buttons: ["Learn More", "Request Survey", "Contact Us"],
-  },
-  
-  {
     image: Banner2,
-    title: "Sustainability for a Greener Future",
+    title: "Retrofit PAS 2035 Compliance",
     description:
-      "Adopt eco-friendly solutions to reduce your carbon footprint. Our sustainability services focus on energy efficiency, responsible construction, and renewable energy integration.",
-    buttons: ["Learn More", "Explore Solutions", "Contact Us"],
+      "Ensure compliance with Retrofit PAS 2035 standards for safe and sustainable property upgrades. Our expert solutions guarantee quality and efficiency.",
+    buttons: ["Learn More", "Request Consultation", "Contact Us"],
+    link: "/services/retrofit", 
   },
   {
     image: Banner3,
     title: "Visual Property Marketing",
     description:
       "Enhance property appeal with high-quality visuals, virtual tours, and 3D renderings. Our marketing solutions help attract buyers and showcase properties effectively.",
-    buttons: ["Learn More", "View Portfolio", "Contact Us"],
+    buttons: ["Learn More", "Request Consultation", "Contact Us"],
+    link: "/services/marketing", 
+  },
+  {
+    image: Banner1,
+    title: "Sustainability for a Greener Future",
+    description:
+      "Adopt eco-friendly solutions to reduce your carbon footprint. Our sustainability services focus on energy efficiency, responsible construction, and renewable energy integration.",
+    buttons: ["Learn More", "Request Consultation", "Contact Us"],
+    link: "/services/sustainability",
   },
 ];
 
-
-
 const HeroCarousel = () => {
+  const navigate = useNavigate(); 
+
+  const handleButtonClick = (action, link) => {
+    switch (action) {
+      case "Learn More":
+        navigate(link); 
+        break;
+      case "Request Consultation":
+      case "Contact Us":
+        navigate("/contact"); 
+        break;
+      default:
+        console.log("Button Clicked: ", action);
+    }
+  };
+
   return (
     <div className="hero-carousel">
       <Swiper
@@ -44,29 +61,29 @@ const HeroCarousel = () => {
         autoplay={{ delay: 4000, disableOnInteraction: false }}
         loop={true}
         pagination={{ clickable: true }}
-        speed={1000} 
+        speed={1000}
         className="swiper-container"
       >
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
             <div className="carousel-slide">
               {/* Background Image */}
-              <img
-                src={slide.image}
-                alt={slide.title}
-                className="slide-image" 
-              />
+              <img src={slide.image} alt={slide.title} className="slide-image" />
 
               {/* Overlay with Text */}
-              <div className="carousel-overlay" data-aos = "fade-up">
-                <div className="carousel-content" >
+              <div className="carousel-overlay" data-aos="fade-up">
+                <div className="carousel-content">
                   <h1>{slide.title}</h1>
                   <p>{slide.description}</p>
 
                   {/* Buttons */}
                   <div className="carousel-buttons">
                     {slide.buttons.map((btn, i) => (
-                      <button key={i} className="carousel-btn">
+                      <button
+                        key={i}
+                        className="carousel-btn"
+                        onClick={() => handleButtonClick(btn, slide.link)} 
+                      >
                         {btn}
                       </button>
                     ))}

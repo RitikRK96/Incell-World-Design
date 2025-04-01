@@ -9,39 +9,34 @@ import "./TestimonialSlider.css";
 // Testimonial data
 const testimonials = [
   {
-    name: "John Doe",
-    role: "CEO, Tech Solutions",
+    name: "John Smith",
+    role: "Managing Director, FutureTech",
     feedback:
-      "Incell World helped us streamline our processes and optimise efficiency. Their expertise and dedication made a huge impact on our business!",
-    image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6",
+      "The professionalism and expertise of this team are outstanding. They truly understand the industry and provided us with solutions that exceeded our expectations.",
   },
   {
-    name: "Sarah Johnson",
-    role: "Marketing Manager",
+    name: "Lisa Reynolds",
+    role: "Operations Manager",
     feedback:
-      "The team at Incell World went above and beyond to ensure we achieved our sustainability goals. Highly recommended!",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d",
+      "Working with them has been a game-changer for our business. Their insights and commitment to delivering quality work are unmatched.",
   },
   {
-    name: "Michael Lee",
-    role: "Director, GreenTech",
+    name: "Mark Thompson",
+    role: "Senior Architect",
     feedback:
-      "Professional, reliable, and highly skilled. Incell World delivered exceptional results for our project.",
-    image: "https://images.unsplash.com/photo-1521119989659-a83eee488004",
+      "Highly recommend! They transformed our project with innovative solutions and a seamless execution process. Their attention to detail is commendable.",
   },
   {
-    name: "Emily Davis",
-    role: "COO, Green Innovators",
+    name: "Samantha Green",
+    role: "Founder, EcoSolutions",
     feedback:
-      "Their approach to sustainability and technological solutions was exactly what our company needed. A pleasure to work with!",
-    image: "https://images.unsplash.com/photo-1520813792240-56fc4a3765a7",
+      "From start to finish, the process was smooth and transparent. They kept us informed at every stage and delivered exactly what was promised.",
   },
   {
-    name: "David Wilson",
-    role: "Head of Operations",
+    name: "James Anderson",
+    role: "Head of Business Development",
     feedback:
-      "Impressed by their attention to detail and commitment to excellence. They delivered beyond expectations!",
-    image: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d",
+      "The dedication and expertise they bring to the table are remarkable. Their work has significantly improved our operational efficiency.",
   },
 ];
 
@@ -86,7 +81,6 @@ const TestimonialSlider = () => {
         {testimonials.map((testimonial, index) => (
           <SwiperSlide key={index}>
             <div className="testimonial-card" data-aos="fade-up">
-              <img src={testimonial.image} alt={testimonial.name} />
               <h3>{testimonial.name}</h3>
               <p className="role">{testimonial.role}</p>
               <p className="feedback">"{testimonial.feedback}"</p>

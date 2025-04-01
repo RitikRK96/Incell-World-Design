@@ -1,8 +1,8 @@
 import React from "react";
 import "./Services.css"; // Importing CSS for styling
-import EPC from "../../assets/Services/EPC.png";
-import DEC from "../../assets/Services/DEC.webp";
-import ECO4 from "../../assets/Services/eco4.webp";
+import EPC from "../../assets/estate1.avif";
+import DEC from "../../assets/VG.jpeg";
+import ECO4 from "../../assets/risk3.jpeg";
 import EPC2 from "../../assets/Services/EPC2.webp";
 import ButtonThree from "./ButtonThree";
 
@@ -66,6 +66,7 @@ const Packages = () => {
               index % 2 === 0 ? "content-left" : "content-right"
             }`}
             key={index}
+            data-aos="fade-up"
           >
             <div className="banner-content">
               <h3 className="banner-title">{item.title}</h3>
