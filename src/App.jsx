@@ -12,12 +12,12 @@ import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 
 // Import service components
-import Sustainability from "./Components/ServicesWrapper/Sustainability";
-import Marketing from "./Components/ServicesWrapper/Marketing";
-import RiskManagementPlanning from "./Components/ServicesWrapper/RiskManagementPlanning";
-import RetrofitPas from "./Components/ServicesWrapper/RetrofitPas";
-import Packages from "./Components/ServicesWrapper/Packages";
-import BuildingSurveying from "./Components/ServicesWrapper/BuildingSurveying";
+import Sustainability from "./Components/Services Wrapper/Sustainability";
+import Marketing from "./Components/Services Wrapper/Marketing";
+import RiskManagementPlanning from "./Components/Services Wrapper/RiskManagementPlanning";
+import RetrofitPas from "./Components/Services Wrapper/RetrofitPas";
+import Packages from "./Components/Services Wrapper/Packages";
+import BuildingSurveying from "./Components/Services Wrapper/BuildingSurveying";
 import Contactus from "./Components/ContactUS/Contactus";
 
 // Scroll to top on route change
