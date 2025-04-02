@@ -12,7 +12,8 @@ const Contactus = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const scriptURL = "https://script.google.com/macros/s/AKfycbx9GQlmjcXhZjNSTGfSB54rpBFo4jR34gt3JwKHE_ewjNsbAtZl3-179Cz8QQFNum2DGA/exec";
+  const scriptURL =
+    "https://script.google.com/macros/s/AKfycbx9GQlmjcXhZjNSTGfSB54rpBFo4jR34gt3JwKHE_ewjNsbAtZl3-179Cz8QQFNum2DGA/exec";
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -36,10 +37,13 @@ const Contactus = () => {
     })
       .then(() => {
         // Show toast notification
-        toast.success("✅ Form Submitted successfully! 👩‍💻 Our team will reach to you shortly 😊", {
-          position: "bottom-left",
-          autoClose: 3000,
-        });
+        toast.success(
+          "✅ Form Submitted successfully! 👩‍💻 Our team will reach to you shortly 😊",
+          {
+            position: "bottom-left",
+            autoClose: 3000,
+          }
+        );
 
         setFormData({
           name: "",
@@ -74,27 +78,37 @@ const Contactus = () => {
               <h3>
                 <span className="icon">📍</span> Location:
               </h3>
-              <p>Unit 3 Grand Union Enterprise Bridge Road Southall, UB2 4EX</p>
+              <p>
+                Incell 1 Nicholson Walk, Nicholson Shopping Centre, Maidenhead,
+                Berkshire, SL6 1LB
+              </p>
             </div>
 
             <div className="info-item">
               <h3>
                 <span className="icon">📧</span> Email:
               </h3>
-              <p>contact@vibraenergy.co.uk</p>
+              <p>
+                <a href="mailto:vibraenergyuk@gmail.com">
+                vibraenergyuk@gmail.com
+                </a>
+              </p>
             </div>
 
             <div className="info-item">
               <h3>
                 <span className="icon">📞</span> Call:
               </h3>
-              <p>0208 843 5173</p>
+              <p>
+                <a href="tel:016287890952">01628 789 0952</a>
+              </p>
             </div>
+
             <div className="map-container">
               <iframe
                 title="Google Map"
                 className="google-map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.5465553501695!2d-0.3763146118631323!3d51.503188099132686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760d4dfaae013d%3A0xabcdd90e7bc11bfb!2sIncell%20World%20Uk%20Ltd!5e0!3m2!1sen!2sin!4v1743242707380!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.51762585585!2d-0.724315123379048!3d51.5220651718166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487662cfc29d0b31%3A0x727550040c990a5e!2sNicholsons%20Shopping%20Centre!5e0!3m2!1sen!2sin!4v1743599033040!5m2!1sen!2sin"
                 width="600"
                 height="450"
                 style={{ border: 0 }}
@@ -161,7 +175,11 @@ const Contactus = () => {
                 />
               </div>
 
-              <button type="submit" className="submit-btn" disabled={isSubmitting}>
+              <button
+                type="submit"
+                className="submit-btn"
+                disabled={isSubmitting}
+              >
                 {isSubmitting ? "Sending..." : "Send Message"}
               </button>
             </form>

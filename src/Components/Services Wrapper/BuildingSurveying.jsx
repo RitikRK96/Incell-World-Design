@@ -53,7 +53,7 @@ const BuildingSurveying = () => {
       <br />
       <section className="package-intro">
         <p className="package-description">
-          At <strong>Incell World</strong>, we provide expert building surveying
+          At <strong style={{color: "var(--primary-color)"}}>Incell Build & Design</strong>, we provide expert building surveying
           solutions designed to give you a clear understanding of your
           property’s condition. Our RICS-certified surveyors offer a range of
           services that ensure property compliance, safety, and value

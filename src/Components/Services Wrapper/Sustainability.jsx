@@ -46,18 +46,29 @@ const Sustainability = () => {
       {/* Hero Section */}
       <section className="incell-ss-hero">
         <div className="incell-bs-hero-overlay">
-          <h1 className="incell-ss-hero-title">Sustainability in Energy Efficiency</h1>
+          <h1 className="incell-ss-hero-title">
+            Sustainability in Energy Efficiency
+          </h1>
         </div>
       </section>
-
+<br /><br />
       {/* Introduction Section */}
       <section className="package-intro">
         <p className="package-description">
-          <strong>Incell World</strong> is dedicated to promoting energy-efficient solutions that contribute to a more sustainable future.
-          Our services help businesses and homeowners <strong>reduce energy consumption, lower costs, and meet industry standards</strong>.
+          <strong style={{ color: "var(--primary-color)" }}>
+            Incell Build & Design
+          </strong>{" "}
+          is dedicated to promoting energy-efficient solutions that contribute
+          to a more sustainable future. Our services help businesses and
+          homeowners{" "}
+          <strong>
+            reduce energy consumption, lower costs, and meet industry standards
+          </strong>
+          .
         </p>
         <p className="package-description">
-          By integrating modern energy-saving techniques, we assist in creating a greener environment while ensuring regulatory compliance.
+          By integrating modern energy-saving techniques, we assist in creating
+          a greener environment while ensuring regulatory compliance.
         </p>
       </section>
 
@@ -65,7 +76,9 @@ const Sustainability = () => {
       <section className="sustainability-container">
         {sustainabilityData.map((item, index) => (
           <div
-            className={`banner ${index % 2 === 0 ? "content-left" : "content-right"}`}
+            className={`banner ${
+              index % 2 === 0 ? "content-left" : "content-right"
+            }`}
             key={index}
             data-aos="fade-up"
           >
@@ -82,31 +95,56 @@ const Sustainability = () => {
 
       {/* Additional Information Section */}
       <section className="package-intro">
-        <h2 className="package-title">The Importance of Sustainable Energy Practices</h2>
+        <h2 className="package-title">
+          The Importance of Sustainable Energy Practices
+        </h2>
         <p className="package-description">
-          As energy demands continue to rise, the need for sustainable solutions has never been greater.
-          Implementing energy-efficient practices not only reduces <strong>carbon footprints</strong> but also enhances <strong>long-term savings</strong>.
+          As energy demands continue to rise, the need for sustainable solutions
+          has never been greater. Implementing energy-efficient practices not
+          only reduces <strong>carbon footprints</strong> but also enhances{" "}
+          <strong>long-term savings</strong>.
         </p>
 
         <h3 className="package-subtitle">Key Benefits of Energy Efficiency</h3>
         <ul className="package-list">
-          <li><strong>Environmental Impact:</strong> Reduces carbon emissions and promotes a cleaner environment.</li>
-          <li><strong>Financial Savings:</strong> Lower energy bills through improved efficiency measures.</li>
-          <li><strong>Regulatory Compliance:</strong> Meets UK government energy efficiency standards.</li>
-          <li><strong>Property Value Enhancement:</strong> Increases the desirability and resale value of properties.</li>
-          <li><strong>Improved Living Conditions:</strong> Ensures better insulation, ventilation, and indoor air quality.</li>
+          <li>
+            <strong>Environmental Impact:</strong> Reduces carbon emissions and
+            promotes a cleaner environment.
+          </li>
+          <li>
+            <strong>Financial Savings:</strong> Lower energy bills through
+            improved efficiency measures.
+          </li>
+          <li>
+            <strong>Regulatory Compliance:</strong> Meets UK government energy
+            efficiency standards.
+          </li>
+          <li>
+            <strong>Property Value Enhancement:</strong> Increases the
+            desirability and resale value of properties.
+          </li>
+          <li>
+            <strong>Improved Living Conditions:</strong> Ensures better
+            insulation, ventilation, and indoor air quality.
+          </li>
         </ul>
 
-        <h3 className="package-subtitle">Our Commitment to a Sustainable Future</h3>
+        <h3 className="package-subtitle">
+          Our Commitment to a Sustainable Future
+        </h3>
         <p className="package-description">
-          At <strong>Incell World</strong>, we believe in <strong>creating lasting, energy-efficient solutions</strong> that benefit both individuals and the planet.
-          Our approach ensures that properties meet the highest energy standards while maintaining <strong>cost-effectiveness and reliability</strong>.
+          At <strong style={{color: "var(--primary-color)"}}>Incell Build & Design</strong>, we believe in{" "}
+          <strong>creating lasting, energy-efficient solutions</strong> that
+          benefit both individuals and the planet. Our approach ensures that
+          properties meet the highest energy standards while maintaining{" "}
+          <strong>cost-effectiveness and reliability</strong>.
         </p>
 
         <h3 className="package-subtitle">Join Us in Making a Difference</h3>
         <p className="package-description">
-          Whether you're a homeowner looking to improve efficiency or a business striving for sustainability, we're here to help.
-          Together, we can build a greener, more energy-conscious future.
+          Whether you're a homeowner looking to improve efficiency or a business
+          striving for sustainability, we're here to help. Together, we can
+          build a greener, more energy-conscious future.
         </p>
 
         <section className="btn-section">

@@ -6,7 +6,7 @@ const Approach = () => {
       <div className="approach-content">
         <h2>Our Approach</h2>
         <p>
-          At <strong>Incell World</strong>, we follow a client-centric approach
+          At <strong style={{color: "var(--primary-color)"}}>Incell Build & Design</strong>, we follow a client-centric approach
           that combines innovation, precision, and expertise to deliver
           exceptional telecom solutions. Our methodology ensures seamless
           integration, optimal performance, and long-term sustainability.

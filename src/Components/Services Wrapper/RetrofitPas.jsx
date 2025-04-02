@@ -51,11 +51,11 @@ const RetrofitPas = () => {
           <h1 className="incell-ss-hero-title">Retrofit PAS</h1>
         </div>
       </section>
-
+<br /><br />
       {/* Introduction Section */}
       <section className="package-intro">
         <p className="package-description">
-          <strong>Incell World</strong> is a leading provider of fully compliant
+        <strong style={{color: "var(--primary-color)"}}>Incell Build & Design</strong> is a leading provider of fully compliant
           Retrofit services under <strong>PAS 2035</strong>. Our team of
           qualified Retrofit Assessors, Designers, and Coordinators work
           seamlessly to ensure that every project meets the highest industry

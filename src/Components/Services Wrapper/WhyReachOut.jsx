@@ -6,7 +6,7 @@ const WhyReachOut = () => {
         <section className="contact-details-section">
         <h2 className="contact-details-title">Why Reach Out to Us?</h2>
         <p className="contact-details-description">
-          At <strong>Incell World</strong>, we go beyond providing services — we
+          At <strong style={{color: "var(--primary-color)"}}>Incell Build & Design</strong>, we go beyond providing services — we
           build long-term partnerships. Our dedicated team ensures that every
           project receives the attention it deserves, delivering high-quality
           solutions that align with your business goals. Here’s why you should

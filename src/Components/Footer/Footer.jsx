@@ -9,31 +9,25 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-top">
           {/* ✅ Logo Section */}
-          <div
-            className="footer-section logo-section"
-            data-aos="fade-right"
-          >
+          <div className="footer-section logo-section" data-aos="fade-right">
             <img
               src={logo}
-              alt="Incell World Logo"
+              alt="Incell Build & Design Logo"
               className="footer-logo"
               data-aos="zoom-in"
             />
-            <p
-              className="footer-text-incell"
-              data-aos="fade-right"
-            >
-              Since our inception, <strong>Incell World</strong> has been driven
-              by a passion for delivering cutting-edge telecom solutions that
-              empower seamless connectivity.
+            <p className="footer-text-incell" data-aos="fade-right">
+              Since our inception,{" "}
+              <strong style={{ color: "var(--primary-color)" }}>
+                Incell Build & Design
+              </strong>{" "}
+              has been driven by a passion for delivering cutting-edge telecom
+              solutions that empower seamless connectivity.
             </p>
           </div>
 
           {/* ✅ Opening Hours Section */}
-          <div
-            className="footer-section"
-            data-aos="fade-up"
-          >
+          <div className="footer-section" data-aos="fade-up">
             <h3>Opening Hours</h3>
             <p>
               Monday to Friday
@@ -49,53 +43,46 @@ const Footer = () => {
           </div>
 
           {/* ✅ Contact Section */}
-          <div
-            className="footer-section"
-            data-aos="fade-up"
-          >
+          <div className="footer-section" data-aos="fade-up">
             <h3>Contact Us</h3>
             <p>
-              164A Derby Road,
-              <br />
-              Stapleford, Nottingham, NG9 7AY
+              Incell 1 Nicholson Walk,
+              Nicholson Shopping Centre, Maidenhead, Berkshire, SL6 1LB
             </p>
             <br />
             <a
-              href="tel:+441159227446"
+              href="tel:+44016287890952"
               className="footer-email"
               data-aos="fade-up"
             >
-              01159 227 446
+              01628 789 0952
             </a>
             <br />
             <a
-              href="mailto:admin@incell-world.com"
+              href="mailto:vibraenergyuk@gmail.com"
               className="footer-email"
               data-aos="fade-up"
             >
-              admin@incell-world.com
+              vibraenergyuk@gmail.com
             </a>
           </div>
 
           {/* ✅ Quick Links Section */}
-          <div
-            className="footer-section"
-            data-aos="fade-left"
-          >
+          <div className="footer-section" data-aos="fade-left">
             <h3>Quick Links</h3>
             <ul>
               <li>
-                <Link to="/" className="footer-link" data-aos="fade-up" >
+                <Link to="/" className="footer-link" data-aos="fade-up">
                   Home
                 </Link>
               </li>
               <li>
-                <Link to="/services" className="footer-link" data-aos="fade-up" >
+                <Link to="/services" className="footer-link" data-aos="fade-up">
                   Services
                 </Link>
               </li>
               <li>
-                <Link to="/about" className="footer-link" data-aos="fade-up" >
+                <Link to="/about" className="footer-link" data-aos="fade-up">
                   About Us
                 </Link>
               </li>
@@ -109,12 +96,10 @@ const Footer = () => {
         </div>
 
         {/* ✅ Footer Bottom */}
-        <div
-          className="footer-bottom"
-
-        >
+        <div className="footer-bottom">
           <p>
-            &copy; {new Date().getFullYear()} Incell World. All Rights Reserved.
+            &copy; {new Date().getFullYear()} Incell Build & Design LTD. All
+            Rights Reserved.
           </p>
         </div>
       </div>

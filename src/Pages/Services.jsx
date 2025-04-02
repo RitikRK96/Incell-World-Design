@@ -1,10 +1,10 @@
 import React from 'react'
-import BuildingSurveying from '../Components/Services Wrapper/BuildingSurveying'
+import RetrofitDesign from '../Components/Services Wrapper/RetrofitDesign';
 
 const Services = () => {
   return (
     <>
-      <BuildingSurveying/>
+      <RetrofitDesign/>
     </>
   )
 }

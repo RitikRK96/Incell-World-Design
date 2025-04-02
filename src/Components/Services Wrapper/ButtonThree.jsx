@@ -12,14 +12,14 @@ const ButtonThree = () => {
             ENQUIRE NOW
           </a>
           <a
-            href="tel:+441234567890"
+            href="tel:+44016287890952"
             className="incell-bs-btn incell-bs-call-btn"
             data-aos="fade-up"
           >
             CALL US
           </a>
           <a
-            href="https://wa.me/441234567890"
+            href="https://wa.me/07481919131"
             className="incell-bs-btn incell-bs-whatsapp-btn"
             data-aos="fade-left"
           >

@@ -3,12 +3,12 @@ import "./Services.css";
 import ButtonThree from "./ButtonThree";
 import WhyChoose from "./WhyChoose";
 
-import placeholderImage1 from "../../assets/estate1.avif";
-import placeholderImage2 from "../../assets/estate1.avif";
-import placeholderImage3 from "../../assets/estate1.avif";
-import placeholderImage4 from "../../assets/estate1.avif";
-import placeholderImage5 from "../../assets/estate1.avif";
-import placeholderImage6 from "../../assets/estate1.avif";
+import placeholderImage1 from "../../assets/banner1Grok.jpg";
+import placeholderImage2 from "../../assets/banner2.jpg";
+import placeholderImage3 from "../../assets/consult.jpg";
+import placeholderImage4 from "../../assets/Services/audit.jpg";
+import placeholderImage5 from "../../assets/retrofit-design1.webp";
+import placeholderImage6 from "../../assets/retrofit-design2.jpg";
 
 const retrofitDesignContent = [
   {
@@ -57,10 +57,10 @@ const RetrofitDesign = () => {
           <h1 className="incell-ss-hero-title">Retrofit Design</h1>
         </div>
       </section>
-
+      <br /><br />
       <section className="package-intro">
         <p className="package-description">
-          <strong>Incell World</strong> delivers high-quality retrofit designs
+          <strong style={{color: "var(--primary-color)"}}>Incell Build & Design</strong> delivers high-quality retrofit designs
           that prioritise energy efficiency, sustainability, and compliance with
           UK regulations. Our tailored solutions ensure properties achieve
           maximum energy performance while reducing carbon emissions.

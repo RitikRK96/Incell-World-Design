@@ -10,7 +10,7 @@ const Banner = () => {
       <div className="our-story-banner-content">
         <h1 className="our-story-title">Our Story</h1>
         <p className="our-story-text">
-          Since our inception, <strong style={{color: "var(--primary-color)"}}>Incell World</strong> has been driven by a
+          Since our inception, <strong style={{color: "var(--primary-color)"}}>Incell Build & Design</strong> has been driven by a
           passion for delivering cutting-edge telecom solutions that empower
           seamless connectivity. What started as a small venture with a vision
           to revolutionise network infrastructure has grown into a trusted
@@ -25,7 +25,7 @@ const Banner = () => {
           pioneers innovative technologies that redefine the digital landscape.
         </p>
         <p className="our-story-text">
-          Today, <strong style={{color: "var(--primary-color)"}}>Incell World</strong> is at the forefront of transforming
+          Today, <strong style={{color: "var(--primary-color)"}}> Incell Build & Design</strong> is at the forefront of transforming
           telecom ecosystems by providing intelligent solutions that meet the
           ever-growing demands of modern communication networks. As we move
           forward, we remain dedicated to innovation, sustainability, and

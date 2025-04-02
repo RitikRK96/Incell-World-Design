@@ -62,15 +62,19 @@ const RiskManagementPlanning = () => {
           <h1 className="incell-ss-hero-title">Risk, Management & Planning</h1>
         </div>
       </section>
-
+      <br />
+      <br />
       {/* Introduction Section */}
       <section className="package-intro">
         <p className="package-description">
-          <strong>Incell World</strong> provides comprehensive risk management
-          solutions designed to ensure safety, compliance, and operational
-          efficiency. Our services are designed to help organisations and
-          property owners manage potential hazards effectively, comply with UK
-          regulations, and maintain high-quality standards.
+          <strong style={{ color: "var(--primary-color)" }}>
+            Incell Build & Design
+          </strong>{" "}
+          provides comprehensive risk management solutions designed to ensure
+          safety, compliance, and operational efficiency. Our services are
+          designed to help organisations and property owners manage potential
+          hazards effectively, comply with UK regulations, and maintain
+          high-quality standards.
         </p>
         <p className="package-description">
           Our dedicated team of experts includes qualified risk assessors, fire
@@ -113,13 +117,13 @@ const RiskManagementPlanning = () => {
         ))}
       </section>
 
-        <WhyChoose/>
+      <WhyChoose />
 
       {/* Button Section */}
       <section className="btn-section">
         <ButtonThree />
       </section>
-      <WhyChoose/>
+      <WhyChoose />
     </>
   );
 };
