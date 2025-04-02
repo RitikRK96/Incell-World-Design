@@ -8,6 +8,7 @@
   padding: 50px 20px;
   width: 100%;
   background-color: #f9f9f9;
+  text-align: center;
 }
 
 .cardWrapper h1 {
@@ -15,6 +16,27 @@
   color: var(--primary-color, #007bff);
   margin-bottom: 40px;
   font-weight: 700;
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+.cardWrapper h1::before,
+.cardWrapper h1::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 60px;
+  height: 3px;
+  background-color: var(--primary-color, #007bff);
+}
+
+.cardWrapper h1::before {
+  left: -60px;
+}
+
+.cardWrapper h1::after {
+  right: -60px;
 }
 
 /* Flexbox Grid */
@@ -27,10 +49,18 @@
   padding: 10px;
 }
 
+/* Make entire card clickable */
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  width: 300px;
+}
+
 /* Card Styles */
 .card {
   height: 380px;
-  width: 300px;
+  width: 100%; /* Ensures it fits inside .card-link */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -40,7 +70,6 @@
   background-color: #fff;
   overflow: hidden;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
-  margin-bottom: 10px;
   cursor: pointer;
 }
 
@@ -87,8 +116,10 @@
 /* 📌 RESPONSIVE STYLES */
 
 @media screen and (max-width: 900px) {
-  .card {
+  .card-link {
     width: 45%;
+  }
+  .card {
     height: 340px;
   }
   .card-title {
@@ -100,22 +131,30 @@
 }
 
 @media screen and (max-width: 600px) {
-  .card {
+  .card-link {
     width: 90%;
+  }
+  .card {
     height: 320px;
   }
   .cardWrapper h1 {
     font-size: 32px;
   }
+  .cardWrapper h1::before,
+  .cardWrapper h1::after {
+    width: 40px;
+  }
+  .cardWrapper h1::before {
+    left: -50px;
+  }
+  .cardWrapper h1::after {
+    right: -50px;
+  }
+
   .card-title {
     font-size: 16px;
   }
   .card-description {
     font-size: 12px;
   }
-}
-
-.card-link {
-  text-decoration: none;
-  color: inherit;
 }
