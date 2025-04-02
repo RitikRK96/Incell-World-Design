@@ -6,19 +6,17 @@ import logo from "../../assets/incell-logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [loading, setLoading] = useState(false); // 👈 Loading State
+  const [loading, setLoading] = useState(false); 
   const location = useLocation();
 
-  // Effect to handle page transitions
   useEffect(() => {
     setLoading(true);
-    const timeout = setTimeout(() => setLoading(false), 500); // Delay 1s
-    return () => clearTimeout(timeout); // Clean up timeout
+    const timeout = setTimeout(() => setLoading(false), 500); 
+    return () => clearTimeout(timeout); 
   }, [location.pathname]);
 
   return (
     <>
-      {/* Spinner Loading Animation */}
       {loading && (
         <div className="loading-overlay">
           <div className="spinner"></div>
@@ -92,8 +90,8 @@ const ServicesDropdown = ({ location, isMobile, onClick }) => {
 
       {/* Dropdown Menu */}
       <ul className={`dropdown-menu ${dropdownOpen ? "open" : ""}`} style={{ display: dropdownOpen ? "block" : "none" }}>
+        <DropdownItem to="/services/Retrofit-Design" text="Retrofit Design" onClick={onClick} />
         <DropdownItem to="/services/retrofit" text="Retrofit PAS" onClick={onClick} />
-        <DropdownItem to="/services/RetrofitDesign" text="Retrofit Design" onClick={onClick} />
         <DropdownItem to="/services/building-surveying" text="Building Surveying" onClick={onClick} />
         <DropdownItem to="/services/sustainability" text="Sustainability" onClick={onClick} />
         <DropdownItem to="/services/risk-management-planning" text="Risk Management Planning" onClick={onClick} />

@@ -13,7 +13,45 @@
   color: var(--primary-color, #007bff);
   margin-bottom: 40px;
   font-weight: 700;
+  text-align: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px; 
 }
+
+.testimonial-container h2::before,
+.testimonial-container h2::after {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 3px; 
+  background-color: var(--primary-color, #007bff);
+}
+
+@media (max-width: 768px) {
+  .testimonial-container h2 {
+      font-size: 32px;
+      gap: 15px;
+  }
+  .testimonial-container h2::before,
+  .testimonial-container h2::after {
+      width: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-container h2 {
+      font-size: 28px;
+      gap: 10px;
+  }
+  .testimonial-container h2::before,
+  .testimonial-container h2::after {
+      width: 40px;
+  }
+}
+
 
 /* ✅ Custom Swiper Wrapper */
 .custom-swiper {

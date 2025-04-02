@@ -51,7 +51,7 @@ const App = () => {
           {/* Service Pages Routes */}
           <Route path="/services/building-surveying" element={<BuildingSurveying />} />
           <Route path="/services/sustainability" element={<Sustainability />} />
-          <Route path="/services/RetrofitDesign" element={<RetrofitDesign />} />
+          <Route path="/services/Retrofit-Design" element={<RetrofitDesign />} />
           <Route path="/services/risk-management-planning" element={<RiskManagementPlanning />} />
           <Route path="/services/retrofit" element={<RetrofitPas />} />
           <Route path="/services/packages" element={<Packages />} />

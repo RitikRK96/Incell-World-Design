@@ -20,7 +20,46 @@
     font-weight: 700;
     margin-bottom: 20px;
     color: var(--primary-color);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Space between text and lines */
 }
+
+/* Decorative Lines */
+.approach-content h2::before,
+.approach-content h2::after {
+    content: "";
+    display: inline-block;
+    width: 60px; /* Length of the lines */
+    height: 3px; /* Thickness of the lines */
+    background-color: var(--primary-color);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .approach-content h2 {
+        font-size: 32px;
+        gap: 15px;
+    }
+    .approach-content h2::before,
+    .approach-content h2::after {
+        width: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .approach-content h2 {
+        font-size: 28px;
+        gap: 10px;
+    }
+    .approach-content h2::before,
+    .approach-content h2::after {
+        width: 40px;
+    }
+}
+
 
 /* Paragraph */
 .approach-content p {
