@@ -13,7 +13,7 @@ import Footer from "./Components/Footer/Footer";
 
 // Import service components
 import Sustainability from "./Components/Services Wrapper/Sustainability";
-import Marketing from "./Components/Services Wrapper/Marketing";
+import RetrofitDesign from "./Components/Services Wrapper/RetrofitDesign";
 import RiskManagementPlanning from "./Components/Services Wrapper/RiskManagementPlanning";
 import RetrofitPas from "./Components/Services Wrapper/RetrofitPas";
 import Packages from "./Components/Services Wrapper/Packages";
@@ -51,7 +51,7 @@ const App = () => {
           {/* Service Pages Routes */}
           <Route path="/services/building-surveying" element={<BuildingSurveying />} />
           <Route path="/services/sustainability" element={<Sustainability />} />
-          <Route path="/services/marketing" element={<Marketing />} />
+          <Route path="/services/RetrofitDesign" element={<RetrofitDesign />} />
           <Route path="/services/risk-management-planning" element={<RiskManagementPlanning />} />
           <Route path="/services/retrofit" element={<RetrofitPas />} />
           <Route path="/services/packages" element={<Packages />} />

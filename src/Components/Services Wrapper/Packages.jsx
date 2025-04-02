@@ -5,6 +5,7 @@ import DEC from "../../assets/VG.jpeg";
 import ECO4 from "../../assets/risk3.jpeg";
 import EPC2 from "../../assets/Services/EPC2.webp";
 import ButtonThree from "./ButtonThree";
+import WhyChoose from "./WhyChoose";
 
 
 
@@ -77,6 +78,7 @@ const Packages = () => {
             </div>
           </div>
         ))}
+        <WhyChoose/>
         <ButtonThree/>
       </section>
     </>

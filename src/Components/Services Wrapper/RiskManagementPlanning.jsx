@@ -119,6 +119,7 @@ const RiskManagementPlanning = () => {
       <section className="btn-section">
         <ButtonThree />
       </section>
+      <WhyChoose/>
     </>
   );
 };

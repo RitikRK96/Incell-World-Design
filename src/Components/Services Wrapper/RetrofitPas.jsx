@@ -6,6 +6,7 @@ import EPC from "../../assets/Services/EPC.png";
 import DEC from "../../assets/Services/DEC.webp";
 import ECO4 from "../../assets/coordination.jpg";
 import EPC2 from "../../assets/Services/EPC2.webp";
+import WhyChoose from "./WhyChoose";
 
 // Data for Retrofit PAS Process
 const retrofitData = [
@@ -97,11 +98,7 @@ const RetrofitPas = () => {
           </div>
         ))}
       </section>
-
-      {/* Button Section */}
-      <section className="btn-section">
-        <ButtonThree />
-      </section>
+      <WhyChoose/>
     </>
   );
 };
