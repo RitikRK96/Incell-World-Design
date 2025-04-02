@@ -8,7 +8,6 @@ import EPC2 from "../../assets/Services/EPC2.webp";
 import AUDIT from "../../assets/Services/audit.jpg";
 import WhyChoose from "./WhyChoose";
 
-// Data for Building Surveying
 const buildingSurveyingData = [
   {
     title: "1. Initial Consultation",
@@ -45,14 +44,13 @@ const buildingSurveyingData = [
 const BuildingSurveying = () => {
   return (
     <>
-      {/* Hero Section */}
       <section className="incell-ss-hero mt-18">
         <div className="incell-bs-hero-overlay">
           <h1 className="incell-ss-hero-title">Building Surveying</h1>
         </div>
       </section>
-
-      {/* Introduction Section */}
+      <br />
+      <br />
       <section className="package-intro">
         <p className="package-description">
           At <strong>Incell World</strong>, we provide expert building surveying
@@ -79,7 +77,6 @@ const BuildingSurveying = () => {
         </section>
       </section>
 
-      {/* Steps/Surveying Process Section */}
       <section className="sustainability-container">
         {buildingSurveyingData.map((item, index) => (
           <div
@@ -100,7 +97,7 @@ const BuildingSurveying = () => {
         ))}
       </section>
 
-      <WhyChoose/>
+      <WhyChoose />
     </>
   );
 };
