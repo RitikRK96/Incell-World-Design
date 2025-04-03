@@ -78,7 +78,7 @@ const Contactus = () => {
               <h3>
                 <span className="icon">📍</span> Location:
               </h3>
-              <p>
+              <p style={{color:"var(--primary-color)"}}>
                 Incell 1 Nicholson Walk, Nicholson Shopping Centre, Maidenhead,
                 Berkshire, SL6 1LB
               </p>
@@ -89,7 +89,7 @@ const Contactus = () => {
                 <span className="icon">📧</span> Email:
               </h3>
               <p>
-                <a href="mailto:vibraenergyuk@gmail.com">
+                <a href="mailto:vibraenergyuk@gmail.com" style={{color:"var(--primary-color)"}}>
                 vibraenergyuk@gmail.com
                 </a>
               </p>
@@ -100,7 +100,9 @@ const Contactus = () => {
                 <span className="icon">📞</span> Call:
               </h3>
               <p>
-                <a href="tel:016287890952">01628 789 0952</a>
+                <a href="tel:016287890952" style={{color:"var(--primary-color)"}}>01628 789 0952 </a>|
+                <a href="tel:07481919131" style={{color:"var(--primary-color)"}}> 07481919131</a>
+
               </p>
             </div>
 

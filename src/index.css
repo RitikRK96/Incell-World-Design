@@ -3,11 +3,8 @@
 /* Root Variables */
 :root {
     --primary-color: red;
-    /* --primary-color: #025008; */
-    /* --primary-color: #1c3b6e; */
     --text-color: #333;
     --bg-color: #ffffff;
-    /* --hover-bg-color: #e0f2e9;  */
     --hover-bg-color: #ffdcdc; 
     --hover-text-color: #ea3322;
     --border-color: #333;
@@ -17,11 +14,13 @@
   }
 
 
+
+
   body, html {
     margin: 0;
     padding: 0;
     width: 100vw;
-    overflow-x: hidden; /* Prevents horizontal scroll */
+    overflow-x: hidden; 
   }
 
   

@@ -19,6 +19,7 @@ import RetrofitPas from "./Components/Services Wrapper/RetrofitPas";
 import Packages from "./Components/Services Wrapper/Packages";
 import BuildingSurveying from "./Components/Services Wrapper/BuildingSurveying";
 import Contactus from "./Components/ContactUS/Contactus";
+import PrivacyNotice from "./Components/PrivacyNotice/PrivacyNotice";
 
 // Scroll to top on route change
 const ScrollToTop = () => {
@@ -39,7 +40,9 @@ const App = () => {
 
   return (
     <Router>
+
       <ScrollToTop />
+      <PrivacyNotice/>
       <Navbar />
       <div className="pt-17">
         <Routes>

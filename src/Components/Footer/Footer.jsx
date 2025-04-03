@@ -51,11 +51,18 @@ const Footer = () => {
             </p>
             <br />
             <a
-              href="tel:+44016287890952"
+              href="tel:01628789052"
               className="footer-email"
               data-aos="fade-up"
             >
               01628 789 0952
+            </a> <span style={{color:"var(--primary-color)"}}>|</span>
+            <a
+              href="tel:07481919131"
+              className="footer-email"
+              data-aos="fade-up"
+            >
+              07481919131
             </a>
             <br />
             <a
