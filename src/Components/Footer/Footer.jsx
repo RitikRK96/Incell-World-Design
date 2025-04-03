@@ -66,11 +66,11 @@ const Footer = () => {
             </a>
             <br />
             <a
-              href="mailto:vibraenergyuk@gmail.com"
+              href="mailto:contact@incellbuilddesign.co.uk"
               className="footer-email"
               data-aos="fade-up"
             >
-              vibraenergyuk@gmail.com
+              contact@incellbuilddesign.co.uk
             </a>
           </div>
 
