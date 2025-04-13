@@ -3,6 +3,7 @@ import Aboutus from "../Components/AboutUs/About.jsx";
 import WhyChoose from "../Components/Services Wrapper/WhyChoose.jsx";
 import WhyReachOut from "../Components/Services Wrapper/WhyReachOut.jsx";
 import { Helmet } from "react-helmet"; // SEO Optimization
+import PartnerCarousel from "../Components/PartnerCarousel/PartnerCarousel.jsx";
 
 const About = () => {
   return (
@@ -19,6 +20,7 @@ const About = () => {
         <Aboutus />
         <WhyChoose />
         <WhyReachOut />
+        <PartnerCarousel/>
     </>
   );
 };

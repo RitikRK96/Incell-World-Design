@@ -15,7 +15,7 @@ const cardData = [
     image: Card5Image, 
     title: "Retrofit Design", 
     description: "Comprehensive retrofit planning and design for energy-efficient properties.", 
-    link: "/services/RetrofitDesign" 
+    link: "/services/Retrofit-Design" 
   },
   { 
     image: Card1Image, 

@@ -7,6 +7,7 @@ import DEC from "../../assets/Services/DEC.webp";
 import ECO4 from "../../assets/coordination.jpg";
 import EPC2 from "../../assets/Services/EPC2.webp";
 import WhyChoose from "./WhyChoose";
+import PartnerCarousel from "../PartnerCarousel/PartnerCarousel";
 
 // Data for Retrofit PAS Process
 const retrofitData = [
@@ -99,6 +100,7 @@ const RetrofitPas = () => {
         ))}
       </section>
       <WhyChoose/>
+      <PartnerCarousel/>
     </>
   );
 };

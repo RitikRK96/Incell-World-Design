@@ -12,6 +12,10 @@ import ciob from "../../assets/logos_company/CIOB.png";
 import ecmk from "../../assets/logos_company/ecmk.jpeg";
 import pas from "../../assets/logos_company/PAS.jpeg";
 import trustmark from "../../assets/logos_company/trustmark.png";
+import CoreLogic from "../../assets/logos_company/CoreLogic.webp";
+import Eon from "../../assets/logos_company/eon.jpg";
+import IAACs from "../../assets/logos_company/IAACs.png";
+import Elmhurst from "../../assets/logos_company/Elmhurst.jpg";
 
 // Partner logo data
 const partners = [
@@ -21,6 +25,10 @@ const partners = [
   { id: 4, src: ecmk, alt: "ECMK" },
   { id: 5, src: pas, alt: "PAS" },
   { id: 6, src: trustmark, alt: "Trustmark" },
+  { id: 7, src: CoreLogic, alt: "CoreLogic" },
+  { id: 8, src: Eon, alt: "Eon" },
+  { id: 9, src: IAACs, alt: "IAACs" },
+  { id: 10, src: Elmhurst, alt: "Elmhurst" },
 ];
 
 // Custom Previous Arrow

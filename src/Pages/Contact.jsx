@@ -1,4 +1,5 @@
 import React from "react";
+import PartnerCarousel from "../Components/PartnerCarousel/PartnerCarousel";
 
 const Contact = () => {
   return (
@@ -18,7 +19,7 @@ const Contact = () => {
         </p>
       </section>
 
-      {/* Additional Content */}
+      <PartnerCarousel/>
       
 
     </>

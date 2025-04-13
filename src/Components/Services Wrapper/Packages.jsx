@@ -6,6 +6,7 @@ import ECO4 from "../../assets/risk3.jpeg";
 import EPC2 from "../../assets/Services/EPC2.webp";
 import ButtonThree from "./ButtonThree";
 import WhyChoose from "./WhyChoose";
+import PartnerCarousel from "../PartnerCarousel/PartnerCarousel";
 
 
 
@@ -81,6 +82,7 @@ const Packages = () => {
         <WhyChoose/>
         <ButtonThree/>
       </section>
+      <PartnerCarousel/>
     </>
   );
 };

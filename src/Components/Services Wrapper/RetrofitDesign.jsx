@@ -9,6 +9,7 @@ import placeholderImage3 from "../../assets/consult.jpg";
 import placeholderImage4 from "../../assets/Services/audit.jpg";
 import placeholderImage5 from "../../assets/retrofit-design1.webp";
 import placeholderImage6 from "../../assets/retrofit-design2.jpg";
+import PartnerCarousel from "../PartnerCarousel/PartnerCarousel";
 
 const retrofitDesignContent = [
   {
@@ -103,6 +104,7 @@ const RetrofitDesign = () => {
       <section className="btn-section">
         <ButtonThree />
       </section>
+      <PartnerCarousel/>
     </>
   );
 };

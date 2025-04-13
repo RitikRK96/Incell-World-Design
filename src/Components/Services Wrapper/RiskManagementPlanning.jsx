@@ -7,6 +7,7 @@ import ECO4 from "../../assets/cad-modelling.jpg";
 import EPC2 from "../../assets/risk3.jpeg";
 import AUDIT from "../../assets/Quality-Assurance-1.jpeg";
 import WhyChoose from "./WhyChoose";
+import PartnerCarousel from "../PartnerCarousel/PartnerCarousel";
 
 // Data for Risk, Management, and Planning Services
 const riskManagementData = [
@@ -117,13 +118,12 @@ const RiskManagementPlanning = () => {
         ))}
       </section>
 
-      <WhyChoose />
-
       {/* Button Section */}
       <section className="btn-section">
         <ButtonThree />
       </section>
       <WhyChoose />
+      <PartnerCarousel/>
     </>
   );
 };

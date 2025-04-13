@@ -6,6 +6,8 @@ import ECO4 from "../../assets/Services/eco4.webp";
 import EPC2 from "../../assets/Services/EPC2.webp";
 import AUDIT from "../../assets/Energy-Audit-Scheme.jpg";
 import WhyChoose from "./WhyChoose";
+import PartnerCarousel from "../PartnerCarousel/PartnerCarousel";
+import ButtonThree from "./ButtonThree";
 
 const sustainabilityData = [
   {
@@ -147,14 +149,12 @@ const Sustainability = () => {
           build a greener, more energy-conscious future.
         </p>
 
-        <section className="btn-section">
-          {/* Optional Call-to-Action Button (Add if needed) */}
-          {/* <ButtonThree /> */}
-        </section>
+
       </section>
 
-      {/* Why Choose Us Section */}
-      <WhyChoose />
+      <WhyChoose /> 
+      <ButtonThree/>
+      <PartnerCarousel/>
     </>
   );
 };

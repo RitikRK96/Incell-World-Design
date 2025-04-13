@@ -7,6 +7,7 @@ import ECO4 from "../../assets/data-collection.jpg";
 import EPC2 from "../../assets/Services/EPC2.webp";
 import AUDIT from "../../assets/Services/audit.jpg";
 import WhyChoose from "./WhyChoose";
+import PartnerCarousel from "../PartnerCarousel/PartnerCarousel";
 
 const buildingSurveyingData = [
   {
@@ -98,6 +99,7 @@ const BuildingSurveying = () => {
       </section>
 
       <WhyChoose />
+      <PartnerCarousel/>
     </>
   );
 };
